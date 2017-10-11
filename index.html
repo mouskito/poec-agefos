@@ -4,27 +4,17 @@
     <meta charset="utf-8">
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
-<style type="text/css">
-    .newClass {
-        color: blue;
-    }
-
-    #newId {
-        color: red;
-    }
-</style>
-     
+    <script type="text/javascript" src="js/demo.js"></script>
   </head>
- 
   <body>
     <!-- Page Content -->
     <header>
         <div class="logo"><img src="img/logo.png" alt="Logo"></div>
         <nav>
             <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="special-link" href="index.html">Home Page</a></li>
+                <li><a class="special-link" href="about.html">About Us</a></li>
+                <li><a class="special-link" href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
@@ -39,57 +29,57 @@
     
 
     <main>
-        <h1>My big website</h1>
+        <h1>Get in touch</h1>
+        <form method="post"   name="formul"  onSubmit="return verif();" action="#" > 
+            <div class="form-group zoneRadio">
+                <label>Title</label>
+                <input type="radio" name="title" id="mr" tabindex="1"><span>Mr.</span>
+                <input type="radio" name="title" id="miss" tabindex="3"><span>Miss.</span>
+            </div>
 
-        <section>
-            my big freaking slider
-        </section>
+            <div class="form-group">
+                <label for="firstname">FirstName*:</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
 
-        <section>
-         <div id="test1">
-      <p>
-          Lorem ipsum dolor sit amet.
-        </p>
-      </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname">
+            </div>
 
-      <div id="test2">
-          <p>
-              Lorem ipsum dolor sit amet.
-          </p>
-      </div>
-            <article>
-                <h2>Le javascript est cool!</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </article>
-            <article>
-                <h2>getElementById</h2>
-               <div id="monId">
-                   Je change ma couleur
-               </div>
-            </article>
-            <article>
-                <h2>getElementsByClassName </h2>
-                <p></p>
-                <div class="maClasse">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-            </article>
-        </section>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="text" class="email" name="email" id="email">
+            </div>
+
+            <div class="form-group">
+                <label for="tel">Tel:</label>
+                <input type="text" class="tel" name="tel" id="tel">
+            </div>
+
+            <div class="form-group zoneTextarea">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <div>10 characters maximum</div>
+            </div>
+
+            <div class="form-group zoneCheckbox">
+                <label for="tnc">Terms and Conditions</label>
+                <input type="checkbox" name="tnc" id="tnc"><span>Agree</span><br>
+                <label for=""></label>
+                <input type="checkbox" name="nottnc" id="nottnc"><span>Read</span>
+            </div>
+            
+            <div class="required-fields">
+                *: Required fields
+            </div>
+            <div class="form-group">
+                <input type="submit" value="SEND">
+            </div>
+        </form>
     </main>
-
     <footer>
         copyright @iknsa.com
     </footer>
-  <script src="js/demo.js"></script>
   </body>
 </html>
