@@ -4,43 +4,18 @@
     <meta charset="utf-8">
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script>
-        var questions = [
-            {
-                ques: 'Est-ce que tu aime le JavaScript ?',
-                ans : 'Oui'
-            },
-            {
-                ques: 'Le JavaScript est une évolution du Java ?',
-                ans : 'Non'
-            },
-            {
-                ques: 'Le JavaScript est proche du Java ?',
-                ans : 'Non'
-            },
-            {
-                ques: 'Le JavaScript est un langage d\'objet par prototypage ?',
-                ans : 'Oui'
-            },
-            {
-                ques: 'Le JavaScript est souvent utilisé coté client ?',
-                ans : 'Oui'
-            },
-            {
-                ques: 'Le JavaScript peut être utilisé coté client et serveur ?',
-                ans : 'Oui'
-            }
-        ];
+<style type="text/css">
+    .newClass {
+        color: blue;
+    }
 
-        for(i=0;i<questions.length; i++){
-            if(prompt(questions[i].ques).toLowerCase() === questions[i].ans.toLowerCase()) {
-                console.log('Bonne réponse pour la question ' + questions[i].ques);
-            } else {
-                console.log('Faux. La bonne réponse à la question ' + questions[i].ques + ' était ' + questions[i].ans)
-            }
-        }
-    </script>
+    #newId {
+        color: red;
+    }
+</style>
+     
   </head>
+ 
   <body>
     <!-- Page Content -->
     <header>
@@ -71,20 +46,43 @@
         </section>
 
         <section>
+         <div id="test1">
+      <p>
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+
+      <div id="test2">
+          <p>
+              Lorem ipsum dolor sit amet.
+          </p>
+      </div>
             <article>
-                <h2>Picture</h2>
-                <img src="img/img.png" alt="un dessin">
-                <p>Un big de dessin</p>
+                <h2>Le javascript est cool!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </article>
             <article>
-                <h2>girl</h2>
-                <img src="img/img2.png" alt="un dessin">
-                <p>Le couple parfait!</p>
+                <h2>getElementById</h2>
+               <div id="monId">
+                   Je change ma couleur
+               </div>
             </article>
             <article>
-                <h2>Pussy</h2>
-                <p>Le javascript est cool! </p>
-                <img src="img/img3.png" alt="un dessin">
+                <h2>getElementsByClassName </h2>
+                <p></p>
+                <div class="maClasse">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
             </article>
         </section>
     </main>
@@ -92,5 +90,6 @@
     <footer>
         copyright @iknsa.com
     </footer>
+  <script src="js/demo.js"></script>
   </body>
 </html>
