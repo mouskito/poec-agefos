@@ -4,7 +4,48 @@
     <meta charset="utf-8">
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript">
+            
+            var numero = 06;
 
+            if (numero == 17) {
+                console.log("La police");
+            }
+            else if (numero == 18) {
+                console.log("Les pompiers");
+            }
+            else if (numero == 0800) {
+                console.log("Numero vert");
+            }
+            else if (numero == 06) {
+                console.log("Numero mobile");
+            }
+            else{
+                console.log("oups !!!");
+            }
+
+            // Ternaire
+            console.log(numero >= 18 ? 'Tu es majeur!' : 'Tu es mineur!');
+
+            // switch case
+            var nombreDePoints = 0 ;
+            switch(nombreDePoints) {
+                case 0 :
+                    alert('Trop est nul. Merci de ne pas revenir ici') ;
+                    break ; 
+                case 1:
+                    alert('Un peu limite.') ;
+                    break ;
+                case 2:
+                    alert('Très bien') ;
+                    break ;
+                case 3:
+                    alert('Tu as eu de la chance de tomber sur un jeu trop facile') ;
+                    break ;
+                default :
+                    alert('On croirai que j\'ai fait confiance à l\'utilisateur') ;
+            }
+    </script>
   </head>
   <body>
     <!-- Page Content -->
