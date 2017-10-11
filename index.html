@@ -5,31 +5,14 @@
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript">
-        /**
-         * La boucle For (Pour Chaque conditions)
-        */
-        for (var i = 0; i < 5; i++) {
-            console.log('for ' + i)
-        }
+        var prenoms = ['Moussa', 'Noémie', 'Robert', 'Jean'];
 
-        /**
-         *  La boucle while (TANT QUE CONDITIONS)
-         */
-        
-        var i =0;
-        while(i < 3){
-            console.log('while ' +i)
-            i++;
+        for(i=0; i < prenoms.length; i++) {
+               if(prenoms[i] === 'Robert') {
+                   prenoms[i] = 'Dujardin';
+               }
+               alert(prenoms[i]);
         }
-
-        /**
-         * La boucle do while (FAIT UNE FOIS ET APRES VERIFIE LA CONDITION)
-         */
-        var j = 0;
-        do{
-            console.log('do while '+j)
-            j++
-        }while(j < 3)
     </script>
   </head>
   <body>
