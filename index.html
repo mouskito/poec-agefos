@@ -5,49 +5,22 @@
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript">
-       // Exemple avec les objets
-        var admis =  true;
-        var etudiants = [
-            {
-                nom : 'Pierre',
-                moyenne: '15',
-                admis: true
-            },{
-                nom : 'Paul',
-                moyenne: '10',
-                admis: true
-            },
-            {
-                nom : 'Jacques',
-                moyenne: '8',
-                admis: false
-            },
-            {
-                nom : 'Manon',
-                moyenne: '5',
-                admis: false
-            }
-        ]
-        console.log(etudiants)
-        console.log(etudiants[0])
-        console.log(etudiants[1])
-        console.log(etudiants[2])
-        console.log(etudiants[3])
-        
-        console.log('Liste des etudiants')
-        for (var i = 0; i < etudiants.length; i++) {
-            //console.log(etudiants[i])
-            var etudiant = etudiants[i]
-            //console.log(etudiant.nom)
-            //console.log(etudiant.nom +' a une moyenne de '+ etudiant.moyenne)
-            // Faire une liste des admis et non admis
-            if (etudiant.moyenne >= 10 && admis) {
-                console.log(etudiant.nom + ' est admis ' + 'avec ' + etudiant.moyenne + ' de moyenne')
-            }
-            else{
-                console.log(etudiant.nom + ' est non admis')
-            }
+       function addition(a,b){
+            return a + b
         }
+        function soustraction(a,b){
+            return a - b
+        }
+        function multiplication(a, b){
+            return a * b
+        }
+        function division(a,b){
+            return a/b
+        }
+
+        //appel de la fonction
+
+        console.log(addition(2,5));
     </script>
   </head>
   <body>
