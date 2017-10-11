@@ -4,23 +4,41 @@
     <meta charset="utf-8">
     <title>JavaScript Course - IKNSA</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript">
-       function addition(a,b){
-            return a + b
-        }
-        function soustraction(a,b){
-            return a - b
-        }
-        function multiplication(a, b){
-            return a * b
-        }
-        function division(a,b){
-            return a/b
-        }
+    <script>
+        var questions = [
+            {
+                ques: 'Est-ce que tu aime le JavaScript ?',
+                ans : 'Oui'
+            },
+            {
+                ques: 'Le JavaScript est une évolution du Java ?',
+                ans : 'Non'
+            },
+            {
+                ques: 'Le JavaScript est proche du Java ?',
+                ans : 'Non'
+            },
+            {
+                ques: 'Le JavaScript est un langage d\'objet par prototypage ?',
+                ans : 'Oui'
+            },
+            {
+                ques: 'Le JavaScript est souvent utilisé coté client ?',
+                ans : 'Oui'
+            },
+            {
+                ques: 'Le JavaScript peut être utilisé coté client et serveur ?',
+                ans : 'Oui'
+            }
+        ];
 
-        //appel de la fonction
-
-        console.log(addition(2,5));
+        for(i=0;i<questions.length; i++){
+            if(prompt(questions[i].ques).toLowerCase() === questions[i].ans.toLowerCase()) {
+                console.log('Bonne réponse pour la question ' + questions[i].ques);
+            } else {
+                console.log('Faux. La bonne réponse à la question ' + questions[i].ques + ' était ' + questions[i].ans)
+            }
+        }
     </script>
   </head>
   <body>
