@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>JavaScript Course - IKNSA</title>
-    <link rel="stylesheet" href="css/styles.css">
 
-  </head>
-  <body>
-    <!-- Page Content -->
-    <header>
-        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home Page</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
 
-        <div class="breadcrumb">
-            <span>You are here</span>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page.html">About Us</a></li>
-            </ul>
-        </div>
-    </header>
-    
+<body onload="initGame()">
+    <div id="textField" class="textFieldManager">
+        <p></p>
+    </div>
 
-    <main>
-        <h1>My big website</h1>
+    <div id="inputField" class="inputFieldManager" onchange="sanityCheckButtons()">
 
-        <section>
-            my big freaking slider
-        </section>
 
-        <section>
-            <article>
-                <h2>Picture</h2>
-                <img src="img/img.png" alt="un dessin">
-                <p>Un big de dessin</p>
-            </article>
-            <article>
-                <h2>girl</h2>
-                <img src="img/img2.png" alt="un dessin">
-                <p>Le couple parfait!</p>
-            </article>
-            <article>
-                <h2>Pussy</h2>
-                <p>Le javascript est cool! </p>
-                <img src="img/img3.png" alt="un dessin">
-            </article>
-        </section>
-    </main>
+        <button class="buttonManager" type="button" id="buttonA" onclick="return addContent()">
+           <div id="choiceALabel">  
+           </div>
+            </button>
 
-    <footer>
-        copyright @iknsa.com
-    </footer>
-  </body>
+        <button class="buttonManager" type="button" id="buttonB" onclick="return addContent()">
+           <div id="choiceBLabel"> 
+            </div>
+            </button>
+
+        <button class="buttonManager" type="button" id="buttonC" onclick="return addContent()">
+           <div id="choiceCLabel"> 
+            </div>
+            </button>
+
+        <button class="buttonManager" type="button" id="buttonD" onclick="return addContent()">
+           <div id="choiceDLabel"> 
+            </div>
+            </button>
+
+        <button class="buttonManager" type="button" id="buttonE" onclick="return addContent()">
+           <div id="choiceELabel"> 
+            </div>
+            </button>
+
+
+
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+</body>
+
 </html>
