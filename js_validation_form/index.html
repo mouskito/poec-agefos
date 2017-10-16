@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript course-Iknsa</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    </head>
+    <body>
+        <div class="container">
+            <!-- form -->
+            <form class="well form-horizontal" action="#" name="form" method="post" id="contact-form" onsubmit="return validate();">
+
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label"></label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <legend>Get in touch</legend>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">Title:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <input type="radio" name="gender" id="male"><span>Mr.</span>
+                                <input type="radio" name="gender" id="female"><span>Ms.</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">First Name:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="first_name" id="first-name" placeholder="Enter your First Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">Last Name:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="last_name" id="last-name" placeholder="Enter your Last Name" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">Email:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="email" id="email" placeholder="Enter your email address" class="form-control" type="email">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">Tel:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input name="tel" id="tel" placeholder="Enter your telephone number" class="form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text area-->
+                    <div class="form-group">
+                        <label class="col-md-4 col-sm-12 control-label">Message:</label>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <textarea name="message" id="message" class="form-control" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- radio checks -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label">Term and Conditions</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" id="terms" value="yes" /> Agree
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="hosting" id="read" value="no" /> Read
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <script type="text/javascript"></script>
+        <script src="js/script.js"></script>
+
+    </body>
+</html>
