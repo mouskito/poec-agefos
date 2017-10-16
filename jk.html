@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<body>
+	<form><div id="email>">
+		<label for="email">please enter your email </label>
+	<input type="text" name="email" id="email" ></div></form>
+	<script type="text/javascript">
+		function valider_email() {
+			// body...
+		
+		var email= document.getElementById('email');
+		if(email!=='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$')
+		{
+			alert('your email not in the right form');
+		}
+		else{
+			alert('great!!!!');
+		}
+	}
+
+	</script>
+
+
+</body>
+</html>
