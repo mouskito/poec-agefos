@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nous contacter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<h1>Nous contacter</h1>
+	<form id="formulaire" name="formulaire" onSubmit="return veriform ()">
+		<fieldset>
+			<legend>Vous êtes :</legend>
+			<div>
+				<label>Monsieur <input type="radio" name="civilite" value="monsieur" id="monsieur"></label>
+				<label>Madame <input type="radio" name="civilite" value="madame" id="madame"></label> 
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<div>
+				<label for="nom">Votre nom : </label>
+				<input type="text" name="nom" id="nom">
+			</div>
+
+			<div>
+				<label for="prenom">Votre prénom : </label>
+				<input type="" name="prenom" id="prenom">
+			</div>
+
+			<div>
+				<label for="adresse">Votre adresse : </label>
+				<input type="text" name="adresse" id="adresse">
+			</div>
+
+			<div>
+				<label for="codepostal">Votre code postal : </label>
+				<input type="" name="codepostal" id="codepostal">
+			</div>
+
+			<div>
+				<label for="commune">Votre commune : </label>
+				<input type="text" name="commune" id="commune">
+			</div>
+
+			<div>
+				<label for="ademail">Votre adresse e-mail :</label>
+				<input type="email" name="ademail" id="ademail">
+			</div>
+
+			<div>
+				<label for="numero">Votre numéro de téléphone :</label>
+				<input type="tel" name="numero" id="numero">
+			</div>
+		</fieldset>
+		<fieldset>
+			<div>
+				<label for="comment">Comment nous avez-vous connus ?</label>
+				<select name="comment" id="comment">
+					<option value="ami">Par un ami</option>
+					<option value="famille">Par un membre de ma famille</option>
+					<option value="publicité">Par la publicité</option>
+					<option value="internet">Par internet</option>
+					<option value="oreille">Par le bouche à oreille</option>
+					<option value="autre">Autre</option>
+				</select>
+			</div>
+			<div>
+				<label for="zonemessage">Votre message :</label>
+				<textarea id="zonemessage"></textarea>
+			</div>
+		</fieldset>
+		<div>
+			<button type="submit">Envoyer</button>
+		</div>
+	</form>
+
+</body>
+</html>
