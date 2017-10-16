@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire inscription javascript</title>
+	<link rel="icon" type="image/png" href="../img/icone.jpg" />
+	<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+</head>
+<body id="homepage">
+
+	 <header>
+        <div class="row">
+        	<div class="col-md-9">
+        		<div class="row">
+	        		<h1 class="col-md-6 pt-2">Exercice Javascript</h1>
+	        		<nav class="col-md-6 menu">
+	        			<ul class="menu">
+	        				<li><a href="index.html">Exo 1</a></li>
+	        				<li><a href="#">Exo 2</a></li>
+	        				<li><a href="#">Exo 3</a></li>
+	        				<li><a href="#">Exo 4</a></li>
+	        				<li><a href="#">Exo 5</a></li>
+	        			</ul>
+	        		</nav>
+        		</div>
+        	</div>
+        	<div class="col-md-3">
+        		<form>
+                    <input type="text" name="utilisateur" placeholder="Entre votre login" id="utilisateur">
+                    <input type="password" name="password" placeholder="Entre votre mot de passe"  id="password">
+                    <input type="submit" name="sign-in" value="Sign in" id="signin">
+                    <input type="submit" name="sign-up" value="Sign up" id="signup">
+                </form>
+        	</div>
+        </div>
+    </header>
+
+    <div class="container">
+    	<div class="row">
+    		<h2 class="col-md-12 pt-5 text-center jeux">Jeux</h2>
+    		<div class="col-md-5 mt-3 bloc">
+    			<canvas id="tetris" width="240" height="400"></canvas>
+    			<script src="../js/fichier1.js"></script>
+    		</div>
+    	</div>
+    </div>
+    <footer class="container mt-5 mb-3 footer">
+                    <div class="txtbloc1">Copyright Abdel Messaoudi Theme. All rights reserved.</div>
+                    <div class="txtbloc2">Exercice javascript</div>
+    </footer>
+</body>
+</html>
