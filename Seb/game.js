@@ -131,12 +131,14 @@ function bricksAlive() {
 function ballLeaveScreen() {
     lives--;
     if (lives) {
+        isPlaying = false;
         livesText.setText("Lives : " + lives);
         lifeLostText.visible = true;
         ball.reset((game.world.width / 2), (game.world.height - 25));
         paddle.reset((game.world.width / 2), (game.world.height - 5));
         game.input.onDown.addOnce(function () {
             lifeLostText.visible = false;
+            isPlaying = true;
             ball.body.velocity.set(150, -150);
         }, this);
     } else {
