@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+body {
+	
+	background-color: green;
+	 width: 200px;
+  height: 200px;
+  padding: 0;
+
+	
+}
+	
+	form #group-form {
+		border: 500px;
+		padding-left: 150px;
+		border-radius: 10px;
+		margin-left: 40px;
+
+	}
+	
+	#group-form{
+		padding-left: 150px;
+
+		
+		background-color: purple;
+		width: 800px;
+		height: 400px;
+		border-spacing: solid;
+		border-radius: 700px;
+
+	}
+	#title{	
+
+		padding-left: 150px;
+
+	}
+	#name {	
+		padding-left: 60px;
+		margin-right: 20px;
+
+		}
+		
+
+
+
+
+		#lastname {
+		
+		padding-left: 60px;
+	}
+#email{
+	padding-left: 95px;
+}
+#tel{
+	padding-left: 110px;
+}
+#birth{
+	padding-left: 70px;
+}
+#message {
+	padding-left: 70px;
+
+
+}
+.required{
+	padding-left: 75px;
+	width: 180px;
+	height: 100px;
+	}
+	#mes{
+		padding-top: 10px;
+		
+
+	}
+	#reag{
+		padding-left: 100px;
+	}
+#condition{
+	padding-top: 40px;
+	text-align: right;
+}
