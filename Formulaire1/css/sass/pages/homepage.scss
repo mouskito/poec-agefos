@@ -1,0 +1,199 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+#homepage{
+	background-color: #ca8478 ;
+
+	span{
+		font-size: 10px;
+	}
+
+	.container{
+		width:860px;
+		background-color: #644550;
+
+		h1{
+			text-align: center;
+			color: white;
+		}
+		.row{
+			margin-left: 20px;
+			margin-bottom: 20px;
+		}
+		form{
+			.civilite{
+
+				padding-left: 35px;
+				margin-bottom: 15px;
+				color: white;
+				label{
+				padding-right: 30px;
+				}
+				.radio{
+				margin-left: 15px;
+				margin-right: 5px;
+				}
+			}
+
+			.name{
+				label{
+					padding-left: 20px;
+					color: white;
+				}
+			
+				#nom{
+					width: 160px;
+					margin-left: 5px;
+				}
+			}
+
+
+
+			.prenom{
+				label{
+					color: white;
+				}
+				#prenom{
+					width: 160px;
+					margin-left: 15px;
+				}
+			}
+
+			.birth{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+
+				#birth{
+					width: 250px;
+					margin-left: 15px;
+					color:#bbb;
+					font-size: 12px;
+				}
+
+			}
+
+
+
+			.adresse{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+
+				#adresse{
+					width: 250px;
+					margin-left: 15px;
+					color:#757575;
+					font-size: 12px;
+				}
+			}
+
+
+
+			.adresse_2{
+				label{
+					padding-left: 20px;
+					color: white;
+				}
+				#cp{
+					width: 100px;
+					margin-left: 15px;
+				}
+				.ville{
+					label{
+						padding-left: 0px;
+						color: white;
+					}
+					#ville{
+						width: 250px;
+						margin-left: 15px;
+					}
+				}	
+			}
+
+
+			.mail{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+				#mail{
+					width: 250px;
+					margin-left: 15px;
+					color:#757575;
+					font-size: 12px;
+				}
+			}
+
+
+
+			.phone{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+				#phone{
+					width: 250px;
+					margin-left: 15px;
+					color:#757575;
+					font-size: 12px;
+				}
+			}
+
+
+
+			.pseudo{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+				#pseudo{
+					width: 250px;
+					margin-left: 15px;
+					color:#757575;
+					font-size: 12px;
+				}
+			}
+
+
+
+			.mdp{
+				label{
+					padding-left: 35px;
+					color: white;
+				}
+				#mdp{
+					width: 250px;
+					margin-left: 15px;
+					color:#757575;
+					font-size: 12px;
+				}
+			}
+
+
+
+			.envoyer{
+				text-align: right;
+				#envoyer {
+					margin-bottom: 30px;
+				    margin-left: 360px;
+				    width: 150px;
+				    height: 40px;
+				    border: 2px solid #c17e5b;
+				    border-radius: 15px;
+				    background-color: #c17e5b;
+				    color: white;
+				    &:hover{
+					    	border: 2px solid #64362c; 
+						    background-color: #64362c;
+						    color: white;
+					    }
+				}
+			}
+		}	
+	}
+
+}

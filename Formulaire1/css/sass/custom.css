@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+#homepage {
+  background-color: #ca8478; }
+  #homepage span {
+    font-size: 10px; }
+  #homepage .container {
+    width: 860px;
+    background-color: #644550; }
+    #homepage .container h1 {
+      text-align: center;
+      color: white; }
+    #homepage .container .row {
+      margin-left: 20px;
+      margin-bottom: 20px; }
+    #homepage .container form .civilite {
+      padding-left: 35px;
+      margin-bottom: 15px;
+      color: white; }
+      #homepage .container form .civilite label {
+        padding-right: 30px; }
+      #homepage .container form .civilite .radio {
+        margin-left: 15px;
+        margin-right: 5px; }
+    #homepage .container form .name label {
+      padding-left: 20px;
+      color: white; }
+    #homepage .container form .name #nom {
+      width: 160px;
+      margin-left: 5px; }
+    #homepage .container form .prenom label {
+      color: white; }
+    #homepage .container form .prenom #prenom {
+      width: 160px;
+      margin-left: 15px; }
+    #homepage .container form .birth label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .birth #birth {
+      width: 250px;
+      margin-left: 15px;
+      color: #bbb;
+      font-size: 12px; }
+    #homepage .container form .adresse label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .adresse #adresse {
+      width: 250px;
+      margin-left: 15px;
+      color: #757575;
+      font-size: 12px; }
+    #homepage .container form .adresse_2 label {
+      padding-left: 20px;
+      color: white; }
+    #homepage .container form .adresse_2 #cp {
+      width: 100px;
+      margin-left: 15px; }
+    #homepage .container form .adresse_2 .ville label {
+      padding-left: 0px;
+      color: white; }
+    #homepage .container form .adresse_2 .ville #ville {
+      width: 250px;
+      margin-left: 15px; }
+    #homepage .container form .mail label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .mail #mail {
+      width: 250px;
+      margin-left: 15px;
+      color: #757575;
+      font-size: 12px; }
+    #homepage .container form .phone label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .phone #phone {
+      width: 250px;
+      margin-left: 15px;
+      color: #757575;
+      font-size: 12px; }
+    #homepage .container form .pseudo label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .pseudo #pseudo {
+      width: 250px;
+      margin-left: 15px;
+      color: #757575;
+      font-size: 12px; }
+    #homepage .container form .mdp label {
+      padding-left: 35px;
+      color: white; }
+    #homepage .container form .mdp #mdp {
+      width: 250px;
+      margin-left: 15px;
+      color: #757575;
+      font-size: 12px; }
+    #homepage .container form .envoyer {
+      text-align: right; }
+      #homepage .container form .envoyer #envoyer {
+        margin-bottom: 30px;
+        margin-left: 360px;
+        width: 150px;
+        height: 40px;
+        border: 2px solid #c17e5b;
+        border-radius: 15px;
+        background-color: #c17e5b;
+        color: white; }
+        #homepage .container form .envoyer #envoyer:hover {
+          border: 2px solid #64362c;
+          background-color: #64362c;
+          color: white; }
+
+/*# sourceMappingURL=custom.css.map */

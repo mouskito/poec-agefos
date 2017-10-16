@@ -1,0 +1,113 @@
+<html>
+<head lang="fr">
+
+	<meta charset="utf-8">
+	<title>S'abonner</title>
+	<link rel="stylesheet" href="../css/sass/custom.css" type="text/css">
+	<link rel="stylesheet" href="../bootstraps/css/bootstrap.css" type="text/css">
+</head>
+
+<body id="homepage">
+	<div class="container">
+
+		<h1>Remplissez le formulaire pour vous abonner :</h1>
+
+		<form action="#" method="post" id="form">
+
+			<div class="row">
+				<div class="civilite">
+
+					Civilité :
+					<input type="radio" name="madame" id="mme" class="radio" >
+					<label for="gender" class="gender" required> Madame </label>
+				
+	  			
+		  			<input type="radio" name="mademoiselle" id="mlle" class="radio">
+		  			<label for="gender" class="gender" required> Mademoiselle </label>
+					
+					<input type="radio" name="monsieur" id="mr" class="radio">
+					<label for="gender" class="gender" required> Monsieur </label>
+					<span id="aideGender"></span>
+
+					
+				</div>
+			</div>
+
+
+			<div class="row ">	
+				<div class="col-md-6 name">
+					<label for="nom">Nom : </label>
+					<input type="text" name="nom" id="nom" required>
+					<span id="aideNom"></span>
+				</div>
+				
+				<div class="col-md-6 prenom">
+					<label for="prenom">Prénom : </label>
+					<input type="text" name="prenom" id="prenom" required>
+					<span id="aidePrenom"></span>
+				</div>
+			</div>
+
+			<div class="row birth">
+				<label for="date">Date de naissance : </label>
+				<input type="date" name="date" value="jj/mm/aaaa" id="birth" required>
+				<span id="aideBirth"></span>
+			</div>
+
+
+			<div class="row adresse">
+				<label for="adresse">Adresse : </label>
+				<input type="text" name="adresse" id="adresse" required>
+				<span id="aideAdresse"></span>
+			</div>
+
+
+			<div class="row adresse_2">
+				<div class="col-md-6">	
+					<label for="cp">Code postal : </label>
+					<input type="text" name="cp" id="cp" required>
+					<span id="aideCp"></span>
+				</div>
+
+				<div class="col-md-6 ville">	
+					<label for="ville">Ville : </label>
+					<input type="text" name="ville" id="ville" required>
+					<span id="aideVille"></span>
+				</div>
+			</div>
+
+			<div class="row mail">
+				<label for="mail">email : </label>
+				<input type="text" name="mail" id="mail" required>
+				<span id="aideMail"></span>
+			</div>
+
+			<div class="row phone">
+				<label for="phone">Portable : </label>
+				<input type="text" name="phone" id="phone" required>
+				<span id="aidePhone"></span>
+			</div>
+
+			<div class="row pseudo">
+				<label for="pseudo">Pseudo : </label>
+				<input type="text" name="pseudo" id="pseudo" required>
+				<span id="aidePseudo"></span>
+			</div>
+
+
+			<div class="row mdp">
+				<label for="mdp">Mot de passe : </label>
+				<input type="password" name="mdp" id="mdp" required>
+				<span id="aideMdp"></span>
+			</div>
+
+			<div class="row envoyer">
+				<input type="submit" name"envoyer" id="envoyer" value="envoyer">
+			</div>
+		</form>
+	</div>
+
+
+	<script src="../js/javascript.js"></script>
+</body>
+</html>
