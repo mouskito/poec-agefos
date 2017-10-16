@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+		.newClass{
+			color: blue;
+
+		}
+		#newId{
+			color: red;
+		}
+	</style>
+</head>
+
+
+<body>
+
+<script type="text/javascript">
+	
+	var monformulaire = document.getElementById('monformulaire');
+	var firstname = document.getElementById('firstname');
+
+	var Lastname = document.getElementById('Lastname');
+
+	var email = document.getElementById('email');
+
+	var tel = document.getElementById('tel');
+
+
+function verification
+
+var verif ;
+
+verif=( if (true) {
+
+				firstname ="" && Lastname ="" && email='' && tel ''
+				}
+			else{
+				
+			}
+		) 
+
+function valider(){
+	input = document.formulaire.entre.value.lenght;
+	if (input==0){
+		alert(vide !)
+	}
+	}
+}
+
+
+
+
+</script>
+
+	<form id="monformulaire" name="formulaire">
+		<fieldset>
+	
+			 <label for="firstname">firstname :</label>
+
+      		 <input type="text" name="firstname" id="firstname" />
+
+      		 <br />
+
+
+      		  <label for="Lastname">lastname :</label>
+
+      		 <input type="text" name="Lastname" id="Lastname" />
+
+      		 <br />
+
+
+
+			 <label for="email">email :</label>
+
+      		 <input type="text" name="email" id="email" />
+
+      		 <br />
+
+
+
+      		 <label for="tel">tel:</label>
+
+      		 <input type="text" name="tel" id="tel" />
+
+      		 <label for="codep">code postal:</label>
+
+      		 <input type="text" name="codep" id="codep" />
+
+
+      		 <input type="submit" value="Envoyer" onclick="valider" />
+
+      	</fieldset>
+
+  		 
+		
+
+	</form>
+
+
+
+</body>
+</html>
