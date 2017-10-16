@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+	<meta charset="utf-8">
+	<title>
+		JS
+
+	</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+    
+
+<body>
+    
+  <div id="test1">
+    <p>Conpulit habet est oppleta legibus pervigil Mediam et Arabia firmitate.</p>
+    
+    </div>
+    
+    <div id="test2">
+    <p>Conpulit habet est oppleta legibus pervigil Mediam et Arabia firmitate.</p>
+    
+    </div>
+    
+     <div class="maClasse1 maClasse2 ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non mauris sapien. Duis ac leo varius, vulputate urna at, maximus dolor. Maecenas egestas est quis massa cursus fermentum. Nunc sodales tortor diam, at convallis dui porta ac. Nulla in libero fringilla, efficitur lacus mollis, rhoncus mauris. In vitae egestas sem. Pellentesque porta, enim ac mattis sagittis, felis nulla elementum odio, vitae finibus felis leo ut libero. Donec in lorem mollis, congue velit rhoncus, porttitor eros. Nam dictum massa at sapien pulvinar, sed venenatis ipsum interdum. Nulla nec lacus dictum, efficitur tortor ac, scelerisque velit. Phasellus aliquam justo diam, et condimentum nulla sollicitudin quis. Aliquam id tempus mi. Ut vulputate justo ac massa faucibus aliquet. Aliquam non dictum orci, a cursus erat. Nullam pharetra id erat at facilisis. Fusce porta dictum augue ac sollicitudin.</p>
+         
+    </div>
+    
+     <div class="maClasse1 maClasse4 maClasse5 maClasse6 ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non mauris sapien. Duis ac leo varius, vulputate urna at, maximus dolor. Maecenas egestas est quis massa cursus fermentum. Nunc sodales tortor diam, at convallis dui porta ac. Nulla in libero fringilla, efficitur lacus mollis, rhoncus mauris. In vitae egestas sem. Pellentesque porta, enim ac mattis sagittis, felis nulla elementum odio, vitae finibus felis leo ut libero. Donec in lorem mollis, congue velit rhoncus, porttitor eros. Nam dictum massa at sapien pulvinar, sed venenatis ipsum interdum. Nulla nec lacus dictum, efficitur tortor ac, scelerisque velit. Phasellus aliquam justo diam, et condimentum nulla sollicitudin quis. Aliquam id tempus mi. Ut vulputate justo ac massa faucibus aliquet. Aliquam non dictum orci, a cursus erat. Nullam pharetra id erat at facilisis. Fusce porta dictum augue ac sollicitudin.</p>
+         
+    </div>
+    
+    
+        <div class="maClasse1 maClasse3 ">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non mauris sapien. Duis ac leo varius, vulputate urna at, maximus dolor. Maecenas egestas est quis massa cursus fermentum. Nunc sodales tortor diam, at convallis dui porta ac. Nulla in libero fringilla, efficitur lacus mollis, rhoncus mauris. In vitae egestas sem. Pellentesque porta, enim ac mattis sagittis, felis nulla elementum odio, vitae finibus felis leo ut libero. Donec in lorem mollis, congue velit rhoncus, porttitor eros. Nam dictum massa at sapien pulvinar, sed venenatis ipsum interdum. Nulla nec lacus dictum, efficitur tortor ac, scelerisque velit. Phasellus aliquam justo diam, et condimentum nulla sollicitudin quis. Aliquam id tempus mi. Ut vulputate justo ac massa faucibus aliquet. Aliquam non dictum orci, a cursus erat. Nullam pharetra id erat at facilisis. Fusce porta dictum augue ac sollicitudin.</p>
+         
+    </div>
+    
+<script>
+    
+  /*  console.log(document.getElementById('test1').innerHTML);
+    document.getElementById('test2').innerHTML = 'Le texte a changé : <a href="#">Accueil</a>';
+    console.log(document.getElementById('test2').innerHTML);
+    
+    console.log(document.getElementsByClassName('maClasse'));
+    
+    console.log(document.querySelector('.maClasse2').className);
+    console.log(document.querySelector('.maClasse3').classList);
+    */
+    
+    console.log(document.querySelectorAll('.maClasse1'));
+    
+    var mesClasses = document.querySelector('.maClasse1').classList;
+    console.log(mesClasses);
+    
+    //mesClasses.add("nouvelle");
+        
+    
+    window.setInterval(function() {
+                       mesClasses.toggle("newClass");
+                       }, 1000);
+    
+    console.log(document.querySelector);
+    
+    
+</script>
+    
+</body>
+</html>

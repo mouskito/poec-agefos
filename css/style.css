@@ -1,0 +1,17 @@
+.newClass {
+    color: red;
+}
+
+body {
+    
+    background-color: skyblue;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+legend {
+    font-size: 1.5em;
+}

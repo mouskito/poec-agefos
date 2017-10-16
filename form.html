@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Formulaire</title>
+     <script src="js/contact.js"></script>
+</head>
+<body>
+	<form method="post" onSubmit="return verif();" action ="#" name="formul">
+		<fieldset>
+			<legend>exemple de formulaire</legend>
+			
+            <p>
+				<input type="radio" name="civilite" id="mr" > Mr
+                <input type="radio" name="civilite" id="miss"> Miss
+			</p>
+            
+                      <p>
+				<label for="firstname">Firstname</label><br>
+                <input type="text" name="" id="firstname"> 
+                
+			</p>
+            
+            <p>
+				<label for="lastname">Lastname</label><br>
+                <input type="text" name="" id="lastname"> 
+                
+			</p>
+            
+            <p>
+				<label for="email">Email</label><br>
+                <input type="text" name="" id="email"> 
+                
+			</p>
+            <p>
+				<label for="Tel">Tel</label><br>
+                <input type="text" name="" id="tel"> 
+                
+			</p>
+            
+            <p>
+                <label for="message">Message</label><br>
+				<textarea rows="5" cols="50" id="message">Votre message</textarea>
+                </p>
+            <div>1000 characters maximum</div>
+			
+            <p>
+				<input type="checkbox">Agree
+                <input type="checkbox">Read
+			</p>
+                           
+			<p>
+				<input type="submit" name="" value="Envoyer">
+			</p>
+		</fieldset>
+	</form>
+</body>
+</html>

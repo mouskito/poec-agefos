@@ -1,0 +1,55 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+	</title>
+</head>
+<body>
+<script>
+var admis =true;
+var etudiants =[
+{
+	nom : 'Pierre',
+	moyenne : '15',
+	admis : true
+},{
+	nom : 'Paul',
+	moyenne : '8',
+	admis : true
+},{
+	nom : 'Jacques',
+	moyenne : '9',
+	admis : false
+},{
+	nom : 'Manon',
+	moyenne : '7',
+	admis : false
+}
+
+]
+
+console.log ("Liste des étudiants");
+
+for (var i=0; i<etudiants.length; i++) {
+
+	var etudiant = etudiants[i];
+
+	if (etudiant.admis === admis) {
+		console.log(etudiant.nom + " est admis avec " + etudiant.moyenne + " de moyenne");
+	}
+	else {
+		console.log(etudiant.nom + " n'est pas admis");
+	}
+
+	
+}
+
+
+
+</script>
+</body>
+</html>

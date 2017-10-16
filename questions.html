@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+
+	</title>
+</head>
+<body>
+<script>
+var questions = [
+{
+
+ques: 'Est-ce que tu aimes le Javascript ?',
+ans: 'Oui'
+},{
+
+ques: 'Le Javascript est une évolution du Java ?',
+ans: 'Non'	
+},{
+
+ques: 'Le Javascript est proche du Java ?',
+ans: 'Non'	
+},{
+
+ques: 'Le Javascript est un langage d\'objets par prototypage ?',
+ans: 'Oui'	
+}
+
+]
+
+
+for (i=0; i<questions.length; i++) {
+var question = questions[i].ques;
+var reponse = questions[i].ans;
+var saisie = prompt (question);
+
+
+	if (saisie.toLowerCase() === reponse.toLowerCase() ) {
+
+		console.log ("Bonne réponse à la question '" + question + "'");
+	}
+
+	else {
+		console.log ("Faux. La bonne réponse à la question '" + question + "' était " + reponse);
+	}
+}
+
+
+</script>
+</body>
+</html>
