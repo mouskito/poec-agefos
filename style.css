@@ -6,6 +6,8 @@ body {
 }
 
 .textFieldManager {
+    margin-top: 80px;
+    margin-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
