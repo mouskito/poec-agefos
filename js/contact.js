@@ -34,7 +34,7 @@ if   (document.formul.lastname.value == "") {
    return false;   
     } 
 
-var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/;
+/*var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/;
 if (regex.test(document.getElementById('email').value))  
     {  
     return true;
@@ -44,9 +44,9 @@ if (regex.test(document.getElementById('email').value))
     document.formul.email.style.backgroundColor = "#f2dede";
     return false;
     }
+*/
 
-
-/*var email  = document.getElementById('email').value;
+var email  = document.getElementById('email').value;
 console.log(email);    
     
 if   (document.formul.email.value == "") {
@@ -55,7 +55,7 @@ if   (document.formul.email.value == "") {
     document.formul.email.style.backgroundColor = "red";
    return false;    
     } 
-*/
+
 var tel  = document.getElementById('tel').value;
 console.log(tel);    
     
