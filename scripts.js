@@ -388,6 +388,8 @@ var storyContent = [
         choiceALabel: "",
         choiceBLink: "addContent()",
         choiceBLabel: "",
+        addButtonA: "display:none",
+        addButtonB: "display:none",
         addButtonC: "display:none",
         addButtonD: "display:none",
         addButtonE: "display:none",
@@ -404,6 +406,8 @@ var storyContent = [
         choiceALabel: "",
         choiceBLink: "addContent()",
         choiceBLabel: "",
+        addButtonA: "display:none",
+        addButtonB: "display:none",
         addButtonC: "display:none",
         addButtonD: "display:none",
         addButtonE: "display:none",
@@ -420,6 +424,8 @@ var storyContent = [
         choiceALabel: "",
         choiceBLink: "addContent()",
         choiceBLabel: "",
+        addButtonA: "display:none",
+        addButtonB: "display:none",
         addButtonC: "display:none",
         addButtonD: "display:none",
         addButtonE: "display:none",
@@ -448,6 +454,8 @@ function addContent(x) {
     document.getElementById("choiceDLabel").innerHTML = storyContent[x].choiceDLabel;
     document.getElementById("choiceELabel").innerHTML = storyContent[x].choiceELabel;
 
+    document.getElementById("buttonA").setAttribute("style", storyContent[x].addButtonA);
+    document.getElementById("buttonB").setAttribute("style", storyContent[x].addButtonB);
     document.getElementById("buttonC").setAttribute("style", storyContent[x].addButtonC);
     document.getElementById("buttonD").setAttribute("style", storyContent[x].addButtonD);
     document.getElementById("buttonE").setAttribute("style", storyContent[x].addButtonE);
@@ -462,22 +470,10 @@ function initGame() {
     document.getElementById("buttonB").setAttribute("onclick", storyContent[0].choiceBLink);
     document.getElementById("choiceALabel").innerHTML = storyContent[0].choiceALabel;
     document.getElementById("choiceBLabel").innerHTML = storyContent[0].choiceBLabel;
+    document.getElementById("buttonA").setAttribute("style", storyContent[0].addButtonA);
+    document.getElementById("buttonB").setAttribute("style", storyContent[0].addButtonB);
     document.getElementById("buttonC").setAttribute("style", storyContent[0].addButtonC);
     document.getElementById("buttonD").setAttribute("style", storyContent[0].addButtonD);
     document.getElementById("buttonE").setAttribute("style", storyContent[0].addButtonE);
 
-}
-
-
-function sanityCheckButtons() {
-    var removeBtnA = document.getElementById("buttonA");
-    removeBtnA.parentNode.removeChild(removeBtnA);
-    var removeBtnB = document.getElementById("buttonB");
-    removeBtnB.parentNode.removeChild(removeBtnB);
-    var removeBtnC = document.getElementById("buttonC");
-    removeBtnC.parentNode.removeChild(removeBtnC);
-    var removeBtnD = document.getElementById("buttonD");
-    removeBtnD.parentNode.removeChild(removeBtnD);
-    var removeBtnE = document.getElementById("buttonE");
-    removeBtnE.parentNode.removeChild(removeBtnE);
 }
