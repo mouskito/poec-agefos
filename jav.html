@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title >your personnel page</title>
+	<b><em>All you need is </em></b>
+
+</head>
+
+
+<link rel="stylesheet" type="text/css" href="css/style2.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<body>
+	
+<form  id="group-form" >
+	<div id="title">Title*:
+  <label for="male">Male</label>
+  <input type="radio" name="gender" id="male" value="male">
+  <label for="female">Female</label>
+  <input type="radio" name="gender" id="female" value="female"></div>
+
+<div id="name">
+	<label for="first name">First Name*:</label>
+	<input type="text" name="firstname" tabindex="5">
+</div>
+<div id="lastname">
+	<label for="last name">Last Name*:</label>
+	<input type="text" name="lastname" >
+</div>
+<div id="email">
+	<label for="email">Email*:</label>
+	<input type="email" name="email" >
+</div>
+<div id="tel">
+	<label for="tel"  >Tel*:</label>
+	<input type="tel" name="urstel" >
+</div>
+<div id="birth">
+ Birthday*: <input type="date" name="bday" >
+</div>
+<div id="mes">
+<label for="message" id="message">Message:</label>
+	
+		<textarea class="required"></textarea>
+	</div>
+	
+	<div id="reag">
+  <label for="agree">Agree</label>
+  <input type="radio" name="gender" id="agree" value="agree">
+  <label for="desagree">desagree</label>
+  <input type="radio" name="gendre" id="reset" value="desagree">
+</div>
+  
+
+
+
+  <footer id="condition"> 
+  	the blanks with * are required <br>
+	<input type="submit"  onclick="valide()"   name="submit" value="send">
+
+</footer>
+
+
+</form>
+
+
+
+<script type="text/javascript">
+	function valide(){
+var gender = document.getElementById('male').checked;
+var gender2 = document.getElementById('female').checked;
+var name = document.getElementById('name').value;
+var lastname= document.getElementById('lastname').value;
+var email = document.getElementById('email').value;
+var tel =document.getElementById('tel').value;
+var birth= document.getElementById('birth').value;
+
+	if(gender===false && gender2===false)
+	      {
+	       alert('you have to choose your sexe');
+           }
+     else{
+     		document.getElementById('gender');
+     }
+    if(name !== '')
+      {
+      	alert('please entre your firstname');
+      }
+      else{
+      	document.getElementById('name');
+      }
+      if(lastname!==''){
+      	alert('please enter your lastname');
+      }
+       else{
+      	document.getElementById('lastname');
+      }
+      if(email!=='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'){
+      	alert('please check your adresse email');
+      } else{
+      	document.getElementById('email');
+      }
+
+
+      if(tel!=='/^(06|07)[0-9]{8}$/')
+      {
+      	alert('please check your telefon number');
+      } else
+      {
+      	document.getElementById('tel');
+      }
+      if(birth!=='')
+      {
+      	alert('please valid your Birthday date');
+      } else
+      {
+      	document.getElementById('birth');
+      }
+
+}
+
+
+
+</script>
+
+</body>
+</html>
