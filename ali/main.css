@@ -1,0 +1,33 @@
+body {
+  background-image: url(imag/im.jpg);
+  margin-top: 20px;
+  height: 130%; }
+  body .container {
+    background-color: #D8D8D8;
+    width: 50%;
+    height: 100%;
+    margin-bottom: 70px; }
+    body .container .heder {
+      text-align: center;
+      background-color: #A4A4A4; }
+    body .container .f {
+      background-color: #424242; }
+
+label {
+  color: #BDBDBD; }
+
+span {
+  color: #DF7401; }
+
+input {
+  color: #0040FF;
+  background-color: #BDBDBD; }
+
+.but {
+  background-color: #2E2E2E;
+  color: #BDBDBD; }
+
+.ero {
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */
