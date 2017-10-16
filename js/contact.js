@@ -34,7 +34,7 @@ if   (document.formul.lastname.value == "") {
    return false;   
     } 
 
-/*var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/;
+var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,3})+$/;
 if (regex.test(document.getElementById('email').value))  
     {  
     return true;
@@ -44,7 +44,7 @@ if (regex.test(document.getElementById('email').value))
     document.formul.email.style.backgroundColor = "#f2dede";
     return false;
     }
-*/
+
 
 var email  = document.getElementById('email').value;
 console.log(email);    
