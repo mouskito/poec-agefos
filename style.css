@@ -1,0 +1,27 @@
+body {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.textFieldManager {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.inputFieldManager {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+
+.buttonManager {
+    display: inline-block;
+    vertical-align: top;
+    width: 310px;
+    height: 100px;
+}
