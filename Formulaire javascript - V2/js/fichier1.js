@@ -39,6 +39,7 @@ if((sexe === false && sexe2 === false) || (prenom === '') || (nom === '') || (!r
 	}
 
 	if(!nombre.test(telephone)) {
+		document.formul.telephone.focus();
 		document.getElementById("telephone").style.backgroundColor = "red"; 
 	}
 	else {

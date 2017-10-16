@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire inscription javascript</title>
+	<link rel="icon" type="image/png" href="../img/icone.jpg" />
+	<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+</head>
+<body id="homepage">
+
+	 <header>
+        <div class="row">
+        	<div class="col-md-9">
+        		<div class="row">
+	        		<h1 class="col-md-6 pt-2">Exercice Javascript</h1>
+	        		<nav class="col-md-6 menu">
+	        			<ul class="menu">
+	        				<li><a href="index.html">Exo 1</a></li>
+	        				<li><a href="#">Exo 2</a></li>
+	        				<li><a href="#">Exo 3</a></li>
+	        				<li><a href="#">Exo 4</a></li>
+	        				<li><a href="#">Exo 5</a></li>
+	        			</ul>
+	        		</nav>
+        		</div>
+        	</div>
+        	<div class="col-md-3">
+        		<form>
+                    <input type="text" name="utilisateur" placeholder="Entre votre login" id="utilisateur">
+                    <input type="password" name="password" placeholder="Entre votre mot de passe"  id="password">
+                    <input type="submit" name="sign-in" value="Sign in" id="signin">
+                    <input type="submit" name="sign-up" value="Sign up" id="signup">
+                </form>
+        	</div>
+        </div>
+    </header>
+
+    <div class="container">
+    	<div class="row">
+    		<h2 class="col-md-12 pt-5 text-center panier">Panier</h2>
+    		<div class="col-md-12 mt-3 bloc">
+    			<h2>Mon panier :</h2>
+                <hr>
+                <section>
+                    <form class="">
+                        <div class="row section1">
+                            <h3 class="col-md-12">Billet d'avion</h3>
+                            <div class="col-md-6 pt-3 section1">
+                                <span>Quantité souhaité :</span>
+                                <input type="text" name="quantite1" id="quantite1" onkeyup="calcul()"/>
+                            </div>
+                            <div class="col-md-6 pt-3 section1">
+                                <span>Le prix est de :</span>
+                                <input type="text" name="prix1" id="prix1" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section1">
+                                <span>Montant total :</span>
+                                <input type="text" name="mtotal1" id="mtotal1" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section1">
+                                <input type="submit" name="changer le prix" value ="changer le prix" id="changer" onclick="changer1()"/>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row section2">
+                            <h3 class="col-md-12">Billet Disney</h3>
+                            <div class="col-md-6 pt-3 section2">
+                                <span>Quantité souhaité :</span>
+                                <input type="text" name="quantite2" id="quantite2" onkeyup="calcul()"/>
+                            </div>
+                            <div class="col-md-6 pt-3 section2">
+                                <span>Le prix est de :</span>
+                                <input type="text" name="prix2" id="prix2" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section2">
+                                <span>Montant total :</span>
+                                <input type="text" name="mtotal2" id="mtotal2" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section1">
+                                <input type="submit" name="changer le prix" value ="changer le prix" id="changer" onclick="changer2()"/>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row section3">
+                            <h3 class="col-md-12">Billet Resto</h3>
+                            <div class="col-md-6 pt-3 section3">
+                                <span>Quantité souhaité :</span>
+                                <input type="text" name="quantite3" id="quantite3" onkeyup="calcul()"/>
+                            </div>
+                            <div class="col-md-6 pt-3 section3">
+                                <span>Le prix est de :</span>
+                                <input type="text" name="prix3" id="prix3" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section3">
+                                <span>Montant total :</span>
+                                <input type="text" name="mtotal3" id="mtotal3" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section1">
+                                <input type="submit" name="changer le prix" value ="changer le prix" id="changer" onclick="changer3()"/>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row section4">
+                            <h3 class="col-md-12">Billet blablacar</h3>
+                            <div class="col-md-6 pt-3 section4">
+                                <span>Quantité souhaité :</span>
+                                <input type="text" name="quantite4" id="quantite4" onkeyup="calcul()"/>
+                            </div>
+                            <div class="col-md-6 pt-3 section4">
+                                <span>Le prix est de :</span>
+                                <input type="text" name="prix4" id="prix4" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section4">
+                                <span>Montant total :</span>
+                                <input type="text" name="mtotal4" id="mtotal4" disabled="disabled"/>
+                            </div>
+                            <div class="col-md-6 mt-2 pb-3 section1">
+                                <input type="submit" name="changer le prix" value ="changer le prix" id="changer" onclick="changer4()"/>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row section5 mb-3">
+                            <h3 class="col-md-12">Montant total</h3>
+                            <div class="col-md-6 pt-3 pb-3 section5">
+                                <span>Montant total :</span>
+                                <input type="text" name="mtotal5" id="mtotal5" disabled="disabled"/>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+    		</div>
+    	</div>
+    </div>
+    <footer class="container mt-5 mb-3 footer">
+                    <div class="txtbloc1">Copyright Abdel Messaoudi Theme. All rights reserved.</div>
+                    <div class="txtbloc2">Exercice javascript</div>
+    </footer>
+    <script src="../js/fichier1.js"></script>
+</body>
+</html>
