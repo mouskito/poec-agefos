@@ -1,0 +1,129 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form action="#" onsubmit="return sendQuery()" name="formulaire">
+        <label for="title" name="test">Title : </label>
+        <input type="radio" name="title" value="Mr" id="title1">Mr.
+        <input type="radio" name="title" value="Mrs" id="title2">Mrs
+        <input type="radio" name="title" value="Miss" id="title3">Miss
+        <br />
+        <br />
+        <label for="firstName">FirstName : </label>
+        <input type="text" name="firstName" id="firstName" onfocus="focusElem(this)" onblur="blurElem(this)">
+        <br />
+        <br />
+        <label for="lastName">LastName : </label>
+        <input type="text" name="lastName" id="lastName" onfocus="focusElem(this)" onblur="blurElem(this)">
+        <br />
+        <br />
+        <label for="email">Email : </label>
+        <input type="text" name="email" id="email" onfocus="focusElem(this)" onblur="blurElemMail(this)">
+        <br />
+        <br />
+        <label for="phone">Tel :</label>
+        <input type="text" name="phone" id="phone" onfocus="focusElem(this)" onblur="blurElemTel(this)">
+        <br />
+        <br />
+        <label for="message">Message : </label>
+        <textarea name="message" id="message" cols="30" rows="10" onfocus="focusElem(this)"></textarea>
+        <br />
+        <br />
+        <label for="condition">Terms and Conditions : </label>
+        <input type="checkbox" name="agree" id="agree">Agree
+        <input type="checkbox" name="read" id="read">Read
+        <br />
+        <br />
+        <input type="submit" value="SEND">
+
+    </form>
+    <script src="javascript.js"></script>
+</body>
+
+</html>-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+</head>
+
+<body id='mainPage' class="container">
+
+    <h1>Formulaire</h1>
+    <div class="row">
+        <div class="col-md-8">
+            <form action="#" name="formulaire" onsubmit="return sendQuery()">
+                <div class="fieldManager col-md-8">
+                    <label for="title" name="test" id="testons">Title : </label>
+                    <input type="radio" name="title" value="Mr" id="title1">Mr.
+                    <input type="radio" name="title" value="Mrs" id="title2">Mrs
+                    <input type="radio" name="title" value="Miss" id="title3">Miss
+                </div>
+                <div class="fieldManager col-md-4">
+                    <label for="firstName">FirstName : </label>
+                </div>
+                <div class="fieldManager col-md-4">
+                    <input type="text" name="firstName" id="firstName" onfocus="focusElem(this)" onblur="blurElem(this)">
+                </div>
+
+                <div class="fieldManager col-md-4">
+                    <label for="lastName">LastName : </label>
+                </div>
+                <div class="fieldManager col-md-4">
+                    <input type="text" name="lastName" id="lastName" onfocus="focusElem(this)" onblur="blurElem(this)">
+                </div>
+
+                <div class="fieldManager col-md-4">
+                    <label for="email">Email : </label>
+                </div>
+                <div class="fieldManager col-md-4">
+                    <input type="text" name="email" id="email" onfocus="focusElem(this)" onblur="blurElemMail(this)">
+                </div>
+
+                <div class="fieldManager col-md-4">
+                    <label for="phone">Tel :</label>
+                </div>
+                <div class="fieldManager col-md-4">
+                    <input type="text" name="phone" id="phone" onfocus="focusElem(this)" onblur="blurElemTel(this)">
+                </div>
+
+                <div class="fieldManager col-md-4">
+                    <label for="message">Message : </label>
+                </div>
+                <div class="fieldManager col-md-4">
+                    <textarea name="message" id="message" cols="30" rows="10" onfocus="focusElem(this)"></textarea>
+                </div>
+
+
+
+                <div class="fieldManager col-md-8">
+                    <label for="condition">Terms and Conditions : </label>
+                    <input type="checkbox" name="agree" id="agree">Agree
+                    <input type="checkbox" name="read" id="read">Read
+                </div>
+
+                <div class="buttonSendManager col-md-4">
+                    <input type="submit" value="SEND">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
