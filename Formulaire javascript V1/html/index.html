@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulaire inscription javascript</title>
+	<link rel="icon" type="image/png" href="../img/icone.jpg" />
+	<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+</head>
+<body id="homepage">
+
+	 <header>
+        <div class="row">
+        	<div class="col-md-9">
+        		<div class="row">
+	        		<h1 class="col-md-6 pt-2">Exercice Javascript</h1>
+	        		<nav class="col-md-6 menu">
+	        			<ul class="menu">
+	        				<li><a href="index.html">Exo 1</a></li>
+	        				<li><a href="#">Exo 2</a></li>
+	        				<li><a href="#">Exo 3</a></li>
+	        				<li><a href="#">Exo 4</a></li>
+	        				<li><a href="#">Exo 5</a></li>
+	        			</ul>
+	        		</nav>
+        		</div>
+        	</div>
+        	<div class="col-md-3">
+        		<form>
+                    <input type="text" name="utilisateur" placeholder="Entre votre login" id="utilisateur">
+                    <input type="password" name="password" placeholder="Entre votre mot de passe"  id="password">
+                    <input type="submit" name="sign-in" value="Sign in" id="signin">
+                    <input type="submit" name="sign-up" value="Sign up" id="signup">
+                </form>
+        	</div>
+        </div>
+    </header>
+
+    <div class="container">
+    	<div class="row">
+    		<h2 class="col-md-12 pt-5 text-center signup">Sign Up</h2>
+    		<form class='col-md-6 mt-4 formulaire' name="formul" onSubmit="return Validation();">
+		 	<div class="row">
+		 		<div class="col-md-12 mt-2 element">		
+				 	<label for="radio" class="mr-5">Sexe : </label>
+				 	<div>
+					 	<span class="mr-3"><input type="radio" name="civi" value="Mr" class="mr-1" id="mr"/> Mr.</span>
+					    <span><input type="radio" name="civi" value="Miss" class="mr-1" id="miss"/> Miss.</span>
+					</div>
+				</div>
+				<div class="col-md-12 mt-2 element">
+					<label for="text" class="mr-5">Votre prénom : </label>
+					<input type="text" name="prenom" id="prenom"/>
+				</div>
+				<div class="col-md-12 mt-2 element">
+					<label for="text" class="mr-5">Votre nom : </label>
+					<input type="text" name="nom" id="nom" />
+				</div>
+				<div class="col-md-12 mt-2 element">
+					<label for="email" class="mr-5">email : </label>
+					<input type="email" name="email" placeholder="email" id="email" />
+				</div>
+				<div class="col-md-12 mt-2 element">
+					<label for="text" class="mr-5">Telephone : </label>
+					<input type="text" name="telephone" id="telephone"/>
+				</div>
+				<div class="col-md-12 mt-2 element">
+					<label for="text" class="mr-5">Message : </label>
+					<div class="message">
+						<textarea cols="25" rows="5" name="message" placeholder="Votre message" id="message"></textarea>
+						<p>10 caractere minimum</p>
+					</div>
+				</div>
+				<div class="col-md-12 mt-2 text-center" id="erreur">
+
+				</div>
+				<div class="col-md-12 mt-2 mb-2 text-center">
+					<input type="submit" name="Valider"  value="Valider"/>
+				</div>
+		    </div>
+		 </form>
+    	</div>
+    </div>
+    <footer class="container mt-5 mb-3 footer">
+                    <div class="txtbloc1">Copyright Abdel Messaoudi Theme. All rights reserved.</div>
+                    <div class="txtbloc2">Exercice javascript</div>
+    </footer>
+<script src="../js/fichier1.js"></script>
+</body>
+</html>

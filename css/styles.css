@@ -1,0 +1,147 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, main {
+    padding: 0 15px;
+}
+
+header {
+    background: rgba(0,0,0, 0.1);
+}
+header .logo {
+    padding-top: 10px;
+    padding-left: 10px;
+    float: left;
+}
+
+header .logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+header nav ul {
+    float: right;
+}
+
+header .breadcrumb {
+    clear: both;
+    margin-top: 10px;
+    color: #199999;
+    border-top: 1px solid #D0D0D0;
+}
+
+header .breadcrumb a {
+    color: inherit;
+}
+
+header .breadcrumb ul, header .breadcrumb ul li {
+    display: inline-block;
+}
+
+header .breadcrumb ul li:after {
+    display: inline-block;
+    content: ">";
+    margin: 0 5px 0 10px;
+    color: black;
+}
+
+header .breadcrumb ul li:last-child:after {
+    display: inline-block;
+    content: none;
+}
+
+header nav ul, header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li {
+    margin: 10px 5px 0;
+}
+
+header nav ul li a {
+    color: #6dc365;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+main > h1{
+    font-size: 24px;
+    font-family: "comic sans ms";
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer {
+    padding: 30px 0;
+    text-align: center;
+    background: black;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Contact page styles */
+form {
+    width:500px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 20px;
+    font-family: Verdana;
+    font-weight: 800;
+}
+
+input[type="text"], textarea,select {
+    background: #ededed;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.zoneRadio span {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.zoneTextarea label {
+    float: left;
+}
+
+
+.zoneTextarea div {
+    font-size: 12px;
+    margin-left: 170px;
+    margin-top: 10px;
+}
+
+.required-fields {
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    float: right;
+    border:none;
+    background: black;
+    color:white;
+    text-transform: uppercase;
+    padding: 3px 8px 5px;
+}
