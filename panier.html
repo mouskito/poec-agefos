@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/panier.css">
+	<title>Mon panier</title>
+     
+     
+</head>
+<body>
+    
+    <form method="post" onSubmit="return verif();" action ="#" id="formul">
+    <fieldset>
+        <legend>Mon Panier</legend>
+
+        <div id = billetMatch>
+            <h2>Billet Match :</h2>
+            
+            
+             <label>Prix : </label>
+            <input type="text" name="quantiteMatch" id="x" value="1" onkeyup="calcul()">
+            
+             <label>Quantité : </label>
+            <input type="text" name="prixMatch" id="y" value="25" onkeyup="calcul()">
+            
+                     
+            <label for="totalMatch"><span><strong>Total :</strong></span> </label>
+            <input type="text" name="totalMatch" id="total" onkeyup="calcul()">
+        </div>
+
+        <p>
+            <label for="somme"><span><strong>Net à payer :</strong></span></label><br>
+            <input type="text" name="" id="somme"> 
+        </p>
+    </fieldset>
+	</form>
+</body>
+</html>

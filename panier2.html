@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/panier.css">
+	<title>Formulaire</title>
+     
+     
+</head>
+<body>
+    
+     	<form method="post" onSubmit="return verif();" action ="#" id="formul">
+		<fieldset>
+			 <legend>Mon Panier</legend>
+
+        <div id = billetMatch>
+            <h2>Billet Match :</h2>
+            
+            <p>
+				<label for="el_1">Quantité: </label>
+                <input type="" id="el_1" value="1" onkeyup="calcul();"> 
+                
+                <label for="el_2">Prix : </label>
+                <input type="" id="el_2" value="25" onkeyup="calcul();"> 
+                
+                <label for="total">Total:  </label>
+                <input type="text" name="total" id="total"> 
+                
+            </p>
+            </div>
+            
+               <div id = billetConcert>
+            <h2>Billet Concert :</h2>
+            
+            <p>
+				<label for="el_1">Quantité: </label>
+                <input type="" id="el_3" value="1" onkeyup="calcul();"> 
+                
+                <label for="el_2">Prix : </label>
+                <input type="" id="el_4" value="25" onkeyup="calcul();"> 
+                
+                <label for="total2">Total:  </label>
+                <input type="text" name="total" id="total2"> 
+                
+            </p>
+            </div>
+            
+            
+            
+         
+		</fieldset>
+	</form>
+  
+</body>
+     <script src="js/panier.js"></script>
+</html>
