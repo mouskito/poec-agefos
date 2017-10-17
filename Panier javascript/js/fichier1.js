@@ -1,13 +1,21 @@
+var nvprix1 = "150";
+var nvprix2 = "40";
+var nvprix3 = "10";
+var nvprix4 = "5";
+
+
 var prix1 = document.getElementById('prix1');
-prix1.value = '150';
+prix1.value = nvprix1;	
 var prix2 = document.getElementById('prix2');
-prix2.value = '40';
+prix2.value = nvprix2;
 var prix3 = document.getElementById('prix3');
-prix3.value = '10';
+prix3.value = nvprix3;
 var prix4 = document.getElementById('prix4');
-prix4.value = '5';
+prix4.value = nvprix4;
 mtotal5 = document.getElementById('mtotal5');
 mtotal5.value = 0;
+
+
 
 
 function calcul() {
@@ -32,21 +40,4 @@ function calcul() {
 
 }
 
-function changer1() {
-	var id = prompt("Veuillez saisir votre ID : ");
-	if (id === "moussa") {
-		var mdp = prompt("Veuillez saisir votre mdp : ");
-		if(mdp==="moussa"){
-			var nvprix = prompt('Veuillez saisir le nouveau prix');
-			alert(nvprix);
-			prix1 = document.getElementById('prix1');
-			prix1.value = nvprix;
-		}
-		else {
-			alert('mot de passe incorect !')
-		}
-	}
-	else {
-		alert('identifiant incorrect !')
-	}
-}
+
