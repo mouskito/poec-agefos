@@ -16,7 +16,7 @@
 			<input type="text" name="price" class="price watch" value ="25">
 
 			<label for="totalprice">Total :</label>
-			<input type="" name="totalprice" class="totalprice">
+			<input type="text" name="totalprice" class="totalprice" disabled>
 		</li>
 		 <li>
 		 	<h3>Billet train</h3>
@@ -27,7 +27,7 @@
 			<input type="text" name="price" class="price watch" value ="30">
 
 			<label for="totalprice">Total :</label>
-			<input type="" name="totalprice" class="totalprice">
+			<input type="text" name="totalprice" class="totalprice" disabled>
 		</li> 
 		<li>
 		 	<h3>Billet musée</h3>
@@ -38,7 +38,7 @@
 			<input type="text" name="price" class="price watch" value ="5">
 
 			<label for="totalprice">Total :</label>
-			<input type="" name="totalprice" class="totalprice">
+			<input type="text" name="totalprice" class="totalprice" disabled>
 		</li> 
 		<li>
 		 	<h3>Billet avion</h3>
@@ -49,7 +49,7 @@
 			<input type="text" name="price" class="price watch" value ="150">
 
 			<label for="totalprice">Total :</label>
-			<input type="" name="totalprice" class="totalprice">
+			<input type="text" name="totalprice" class="totalprice" disabled>
 		</li> 
 	</ul>
 	<div class="">
@@ -60,13 +60,11 @@
 	</div>
 	<script type="text/javascript" src="basket.js"></script>
 
-	<script>
-		document.querySelectorAll(".facturations .watch").forEach(function(field) {
-			field.onkeyup = function () {
-				totalpriceperitem();
-			};
+	<!-- <script>
+		document.querySelectorAll(".facturations li").forEach(function(field) {
+			field.onkeyup =	totalpriceperitem;
 		});
 
-	</script>
+	</script> -->
 </body>
 </html>
