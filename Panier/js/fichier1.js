@@ -15,6 +15,15 @@ prix4.value = nvprix4;
 mtotal5 = document.getElementById('mtotal5');
 mtotal5.value = 0;
 
+quantite = document.querySelector('#quantite1').value;
+quantite2 = document.querySelector('.quantite2').value;
+quantite3 = document.getElementById('quantite1').value;
+quantite4 = document.getElementsByClassName('quantite2').value;
+
+console.log(quantite);
+console.log(quantite2);
+console.log(quantite3);
+console.log(quantite4);
 
 
 
