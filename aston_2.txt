@@ -1,0 +1,48 @@
+git for windows
+https://git-for-windows.github.io/
+
+git --version
+
+cd desktop
+cd ..
+
+git config --global user.name "frpele"
+git config --global user.email "frpele@gmail.com"
+git config --global color.ui auto
+
+git clone https://github.com/frpele/aston.git
+
+https://github.com/twbs/bootstrap
+https://github.com/twbs/bootstrap.git
+
+git status
+git commit -am "first commit"
+git push origin master
+
+créer fichier
+git status
+git add index.html
+git commit -am"add index.html
+git push origin master
+git pull origin master
+
+C:\Users\frpele\Desktop\aston (new_branch)
+? git clone https://github.com/Asaku/Exo-html-css.git
+
+si  : git config --global push.default current
+git push
+git branch new_branch
+git checkout -b newbranch
+
+créer une virtuabox
+https://www.virtualbox.org/
+
+git branch -a
+git branch francois
+
+git checkout francois
+
+git add -A
+git push
+
+

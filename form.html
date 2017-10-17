@@ -4,12 +4,16 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Formulaire</title>
-     <script src="js/contact.js"></script>
+     
 </head>
 <body>
+    
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non mauris sapien. Duis ac leo varius, vulputate urna at, maximus dolor. Maecenas egestas est quis massa cursus fermentum. Nunc sodales tortor diam, at convallis dui porta ac. Nulla in libero fringilla, efficitur lacus mollis, rhoncus mauris. In vitae egestas sem. Pellentesque porta, enim ac mattis sagittis, felis nulla elementum odio, vitae finibus felis leo ut libero. Donec in lorem mollis, congue velit rhoncus, porttitor eros. Nam dictum massa at sapien pulvinar, sed venenatis ipsum interdum. Nulla nec lacus dictum, efficitur tortor ac, scelerisque velit. Phasellus aliquam justo diam, et condimentum nulla sollicitudin quis. Aliquam id tempus mi. Ut vulputate justo ac massa faucibus aliquet. Aliquam non dictum orci, a cursus erat. Nullam pharetra id erat at facilisis. Fusce porta dictum augue ac sollicitudin.</p>
 	<form method="post" onSubmit="return verif();" action ="#" name="formul">
 		<fieldset>
 			<legend>exemple de formulaire</legend>
+            
+           
 			
             <p>
 				<input type="radio" name="civilite" id="mr" > Mr
@@ -36,9 +40,8 @@
             <p>
 				<label for="Tel">Tel</label><br>
                 <input type="text" name="" id="tel"> 
-                
-			</p>
-            
+            </p>
+            <div id="error"></div>
             <p>
                 <label for="message">Message</label><br>
 				<textarea rows="5" cols="50" id="message">Votre message</textarea>
@@ -55,5 +58,6 @@
 			</p>
 		</fieldset>
 	</form>
+    <script src="js/contact.js"></script>
 </body>
 </html>
