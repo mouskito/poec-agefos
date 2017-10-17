@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Course - IKNSA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- BOOSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- -->
+
+    <script language="JavaScript" type="text/javascript">
+    <!--
+
+    function sum_elements(){
+        var somme=0;
+        var result = document.getElementById('somme');
+        var maxLength =  document.querySelectorAll('input[id^="el_"]');
+        
+        for(var i = 1; i<=6; i++){
+            var element = document.getElementById('el_'+i);
+            //console.log(element);
+
+            if(element.value!='' && !isNaN(element.value)){
+                somme += parseFloat(element.value);
+
+            }
+
+        }
+        result.value = somme;
+        console.log(maxLength);
+    }
+
+
+
+
+
+
+
+
+    // Total Panier 
+    function sum_elements_panier(){
+
+        var elements = document.querySelectorAll('.totalAPayer');
+
+        elements.forEach(function(element) {
+            if ( (element.value != '' && !isNaN(element.value)) ) {
+                netAPayer += element.value * 1;
+                document.querySelector('.totalPanier').value = netAPayer;
+            }
+        });
+        
+    }
+
+    </script>
+  </head>
+  <body>
+    <!-- Page Content -->
+    <header>
+        <div class="logo"><img src="img/logo.png" alt="Logo"></div>
+        <nav>
+            <ul>
+                <li><a class="special-link" href="index.html">Home Page</a></li>
+                <li><a class="special-link" href="about.html">About Us</a></li>
+                <li><a class="special-link" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="breadcrumb">
+            <span>You are here</span>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page.html">About Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+            <h1>Calcul: </h1>
+            <form method="post">
+                <label for="el_1"> Nombre 1:</label>
+                <input id="el_1" name="el_1" type="text" onkeyup="sum_elements();">
+                <label for="el_2"> Nombre 2:</label>
+                <input id="el_2" name="el_2" type="text" onkeyup="sum_elements();">
+                <label for="el_3"> Nombre 3:</label>
+                <input id="el_3" name="el_3" type="text" onkeyup="sum_elements();">
+                <label for="el_4"> Nombre 4:</label>
+                <input id="el_4" name="el_4" type="text" onkeyup="sum_elements();">
+                <label for="el_5"> Nombre 5:</label>
+                <input id="el_5" name="el_5" type="text" onkeyup="sum_elements();">
+                <label for="el_6"> Nombre 6:</label>
+                <input id="el_6" name="el_6" type="text" onkeyup="sum_elements();"><br><br>
+                <label>Total: </label>
+                <input id="somme" name="somme" type="text">
+            </form>
+            <hr>
+
+            <div class="well">
+                <h1>Mon panier  </h1> 
+                <ul class="list-group facturations">
+                    <li class="list-group-item list-group-item-success">
+                      <strong> Billet Match :  </strong> <hr>
+                      Quantité: 
+                      <input type="text" name="quant" class="quantite watch" value=1>
+                      Prix:
+                      <input type="text" name="price" class="price watch" value=25>
+                      <strong>Total</strong>
+                      <input type="text" name="totalAPayer" class="totalAPayer"> <br> 
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                      <strong> Billet Train:  </strong> <hr>
+                      Quantité
+                      <input type="text" name="quant" class="quantite watch" value=2>
+                      Prix
+                      <input type="text" name="price" class="price watch" value=50>
+                      <strong>Total</strong>
+                      <input type="text" name="totalAPayer" class="totalAPayer"> <br> 
+                    </li>
+                    <li class="list-group-item list-group-item-success">
+                      <strong> Billet Musee :  </strong> <hr>
+                      Quantité: 
+                      <input type="text" name="quant" class="quantite watch" value=4>
+                      Prix:
+                      <input type="text" name="price" class="price watch" value=15>
+                      T<strong>Total</strong>
+                      <input type="text" name="totalAPayer" class="totalAPayer"> <br> 
+                    </li>
+                    <li class="list-group-item list-group-item-info">
+                      <strong> Billet Avion:  </strong> <hr>
+                      Quantité
+                      <input type="text" name="quant" class="quantite watch" value=1>
+                      Prix
+                      <input type="text" name="price" class="price watch" value=180>
+                      <strong>Total</strong>
+                      <input type="text" name="totalAPayer" class="totalAPayer"> <br> 
+                    </li>
+                </ul>
+                <div id="totalPanier">
+                    <strong>
+                    Net à payer: 
+                     <input type="text" name="totalPanier" class="totalPanier"> </strong>
+                </div>
+            </div>
+        </main>
+    <footer>
+        copyright @iknsa.com
+    </footer>
+    <script type="text/javascript" src="js/panier.js"></script>
+    <script>
+    /* Appel de la methode pour executer le js*/
+        //aPayerParArticle();
+
+        // rendre actif l'evenement  lors du chargement de la page 
+        document.querySelectorAll('.facturations .watch').forEach(function(field) {
+            field.onkeyup = function() {
+                aPayerParArticle();
+            };
+        }); 
+
+    </script>
+  </body>
+</html>
