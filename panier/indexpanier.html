@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mon panier</title>
+</head>
+<body>
+	<h1>Mon panier</h1>
+	<ul class="facturations">
+		<li>
+			<h3>Billet match</h3> 
+			<label for="quantity">Quantité :</label>
+			<input type="text" name="quantity" class ="quantity watch" value ="1">
+
+			<label for="price">Prix :</label>
+			<input type="text" name="price" class="price watch" value ="25">
+
+			<label for="totalprice">Total :</label>
+			<input type="" name="totalprice" class="totalprice">
+		</li>
+		 <li>
+		 	<h3>Billet train</h3>
+			<label for="quantity">Quantité :</label>
+			<input type="text" name="quantity" class ="quantity watch" value ="1">
+
+			<label for="price">Prix :</label>
+			<input type="text" name="price" class="price watch" value ="30">
+
+			<label for="totalprice">Total :</label>
+			<input type="" name="totalprice" class="totalprice">
+		</li> 
+		<li>
+		 	<h3>Billet musée</h3>
+			<label for="quantity">Quantité :</label>
+			<input type="text" name="quantity" class ="quantity watch" value ="1">
+
+			<label for="price">Prix :</label>
+			<input type="text" name="price" class="price watch" value ="5">
+
+			<label for="totalprice">Total :</label>
+			<input type="" name="totalprice" class="totalprice">
+		</li> 
+		<li>
+		 	<h3>Billet avion</h3>
+			<label for="quantity">Quantité :</label>
+			<input type="text" name="quantity" class ="quantity watch" value ="1">
+
+			<label for="price">Prix :</label>
+			<input type="text" name="price" class="price watch" value ="150">
+
+			<label for="totalprice">Total :</label>
+			<input type="" name="totalprice" class="totalprice">
+		</li> 
+	</ul>
+	<div class="">
+		<h3>
+			Montant total :
+			<input type="text" name="totalbasket" class="totalbasket">
+		</h3>
+	</div>
+	<script type="text/javascript" src="basket.js"></script>
+
+	<script>
+		document.querySelectorAll(".facturations .watch").forEach(function(field) {
+			field.onkeyup = function () {
+				totalpriceperitem();
+			};
+		});
+
+	</script>
+</body>
+</html>
