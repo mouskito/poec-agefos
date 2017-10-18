@@ -9,43 +9,44 @@
 </head>
 <body>
     
-     	<form method="post" onSubmit="return verif();" action ="#" id="formul">
+     	<form method="post" onSubmit="return verif();" action ="#">
 		<fieldset>
 			 <legend>Mon Panier</legend>
 
-        <div id = billetMatch>
-            <h2>Billet Match :</h2>
+        <div class ="facturations">  
             
-            <p>
-				<label for="el_1">Quantité: </label>
-                <input type="" id="el_1" value="1" onkeyup="calcul();"> 
-                
-                <label for="el_2">Prix : </label>
-                <input type="" id="el_2" value="25" onkeyup="calcul();"> 
-                
-                <label for="total">Total:  </label>
-                <input type="text" name="total" id="total"> 
-                
-            </p>
-            </div>
+        <h2>Billet Match :</h2>
+        <p>
+            <label for="el_1">Quantité: </label>
+            <input type="" id="el_1" value="1" class = "quantite watch" > 
+
+            <label for="el_2">Prix : </label>
+            <input type="" id="el_2" value="25" class = "price watch"> 
+
+            <label for="total">Total:  </label>
+            <input type="text" name="total" class="totalAPayer"> 
+
+        </p>
             
-               <div id = billetConcert>
-            <h2>Billet Concert :</h2>
+        <h2>Billet Concert :</h2>
+        <p>
+            <label for="el_1">Quantité: </label>
+            <input type="" id="el_3" value="1" class = "quantite watch" > 
+
+            <label for="el_2">Prix : </label>
+            <input type="" id="el_4" value="25" class = "price watch" > 
+
+            <label for="total2">Total:  </label>
+            <input type="text" name="total" class="totalAPayer"> 
+
+        </p>
+        <div id="totalPanier">
+                    <strong>
+                    Net à payer: 
+                     <input type="text" name="totalPanier" class="totalPanier"> </strong>
+         </div>
             
-            <p>
-				<label for="el_1">Quantité: </label>
-                <input type="" id="el_3" value="1" onkeyup="calcul();"> 
-                
-                <label for="el_2">Prix : </label>
-                <input type="" id="el_4" value="25" onkeyup="calcul();"> 
-                
-                <label for="total2">Total:  </label>
-                <input type="text" name="total" id="total2"> 
-                
-            </p>
-            </div>
-            
-            
+        </div>     
             
          
 		</fieldset>
@@ -53,4 +54,15 @@
   
 </body>
      <script src="js/panier.js"></script>
+    
+    <script>
+    /* Appel de la methode pour executer le js*/
+        //aPayerParArticle();
+        // rendre actif l'evenement  lors du chargement de la page 
+        document.querySelectorAll('.facturations .watch').forEach(function(field) {
+            field.onkeyup = function() {
+                aPayerParArticle();
+            };
+        }); 
+    </script>
 </html>
