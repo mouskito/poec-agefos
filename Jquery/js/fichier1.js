@@ -42,21 +42,25 @@ $('#all').click(function () {
         }
 });
 
-$("#message").on('keyup', function() {
+var message = $('#message');
+var nbM = $('#text-mot');
+var nbC = $('#text-caractere');
+
+$("#message").on('keyup', function(e) {
 	
-   var char = $(this).val().split("");
-   var numC = char.length;
-   $('#text-caractere').text(numC);
-   var nombreMots = jQuery.trim($(this).val()).split(' ').length;
+    var tableau = $(this).val().split("");
+    var nbCaractere = tableau.length;
+    nbC.text(nbCaractere);
 
-   $('#text-mot').text(nombreMots);
+   if (nbCaractere > 20) {
 
-   if (numC >= 20) {
-   	
+   	 e.target.value = e.target.value.slice(0, 20);
    	 $(this).css('backgroundColor','rgba(237, 0, 0, 0.3)');
    	 $('#text-caractere').css("color","red");
    	 $('#text-mot').css("color","red");
    	 $('.erreur').css("color","red");
+     nbC.text(nbCaractere-1);
+
 
    }
    else {
@@ -66,5 +70,13 @@ $("#message").on('keyup', function() {
    	 $('#text-mot').css("color","rgb(33, 37, 41)");
    	 $('.erreur').css("color","rgb(33, 37, 41)");
    }
+
+
+   var tableau2 = $(this).val().split(" ");
+   tableau2 = tableau2.filter(function (elem) {
+        return (elem !== "");
+    });
+   var nbMot = tableau2.length;
+   nbM.text(nbMot);
 
  });
