@@ -1,0 +1,28 @@
+form,
+div#contain {
+    background-color: #e9ecef;
+    padding: 80px 30px;
+    margin-top: 40px;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+tr td:last-of-type {
+    color: red;
+}
+
+tr td:first-of-type {
+    font-weight: bold;
+}
+
+thead {
+    background-color: #222529;
+    color: #fff;
+}
+
+div#contain {
+    margin-top: 32px;
+}

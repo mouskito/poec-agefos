@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="name">Nom</label>
+                    <br />
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nom">
+                </div>
+                <div class="col-md-6">
+                    <label for="name">Prénom</label>
+                    <br />
+                    <input type="text" name="surname" class="form-control" id="surname" placeholder="Prénom">
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email">Email</label>
+                    <br />
+                    <input type="text" name="email" class="form-control" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="contain">
+            <h2>Liste des étudiants</h2>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>john@example.com</td>
+                        <td>del</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mary</td>
+                        <td>Moe</td>
+                        <td>mary@example.com</td>
+                        <td>del</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>July</td>
+                        <td>Dooley</td>
+                        <td>july@example.com</td>
+                        <td>del</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.js"></script>
+<script src="../js/script.js"></script>
+
+</html>
