@@ -8,7 +8,6 @@ var boolSurname = false;
 var boolFirstname = false;
 var boolEmail = false;
 
-
 surname.focus();
 
 surname.keyup(function (e) {
@@ -75,15 +74,14 @@ firstname.blur(function (e) {
     }
 });
 
-form.submit(function(e) {
+form.submit(function (e) {
     e.preventDefault();
     if (boolSurname && boolFirstname && boolEmail) {
         if (!isAlreadyPresent(email[0].value)) {
             addStudent(surname[0].value, firstname[0].value, email[0].value);
-        }
-        else {
+        } else {
             alert("Cet élève est déjà enregistré dans la liste !");
-        }    
+        }
     } else {
         if (!boolSurname) {
             surname.focus();
@@ -98,17 +96,36 @@ form.submit(function(e) {
 function addStudent(surnameStudent, firstnameStudent, emailStudent) {
     var index = $("tr").length;
     var newTr = $("<tr>");
-    
-    newTr.html("<td>" + index + "</td><td>" + firstnameStudent + "</td><td>" + surnameStudent + "</td><td>" + emailStudent + "</td><td>del</td>");
+    var strTr = "";
+
+    strTr = "<td>" + index + "</td><td>" + firstnameStudent + "</td><td>" + surnameStudent + "</td><td>" + emailStudent + "</td><td>del</td>";
+    newTr.html(strTr);
     newTr.appendTo("tbody");
+    localStorage.setItem("key_" + index, strTr);
 }
 
 function isAlreadyPresent(newStudent) {
     var studentPresent = $("tbody tr td:nth-of-type(4)");
-    
+
     for (var i = 0; i < studentPresent.length; i++) {
         if (newStudent === studentPresent[i].innerHTML)
             return true;
     }
     return false;
 }
+
+function insertStorage() {
+    var index = $("tr").length;
+    var newTr = $("<tr>");
+    
+    if (localStorage.length > 0) {
+        for (var i = 0; i < localStorage.length; i++) {
+            var newTr = $("<tr>");
+            console.log(localStorage.getItem("key_" + (index + i)));
+            newTr.html(localStorage.getItem("key_" + (index + i)));
+            newTr.appendTo("tbody");
+        }
+    }
+}
+
+insertStorage();
