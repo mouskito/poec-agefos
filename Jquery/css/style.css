@@ -41,5 +41,7 @@
   #homepage .choix {
     display: flex;
     flex-direction: column; }
+  #homepage .fa {
+    cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

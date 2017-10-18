@@ -49,6 +49,7 @@ var nbC = $('#text-caractere');
 $("#message").on('keyup', function(e) {
 	
     var tableau = $(this).val().split("");
+    console.log(tableau);
     var nbCaractere = tableau.length;
     nbC.text(nbCaractere);
 
