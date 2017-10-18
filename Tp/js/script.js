@@ -7,6 +7,8 @@ var regExpMail = /^[^\W][a-zA-Z0-9_]+(\.[a-zA-Z0-9_]+)*\@[a-zA-Z0-9_]+(\.[a-zA-Z
 var boolSurname = false;
 var boolFirstname = false;
 var boolEmail = false;
+var listDel = "";
+var idStorage = 0;
 
 surname.focus();
 
@@ -94,14 +96,16 @@ form.submit(function (e) {
 });
 
 function addStudent(surnameStudent, firstnameStudent, emailStudent) {
-    var index = $("tr").length;
-    var newTr = $("<tr>");
+    var index = parseInt(localStorage.getItem("id"));
+    var newTr = $("<tr id=\"tr_" + index + "\">");
     var strTr = "";
 
-    strTr = "<td>" + index + "</td><td>" + firstnameStudent + "</td><td>" + surnameStudent + "</td><td>" + emailStudent + "</td><td>del</td>";
+    strTr = "<td>" + index + "</td><td>" + firstnameStudent + "</td><td>" + surnameStudent + "</td><td>" + emailStudent + "</td><td id=\"del_" + index + "\">del</td>";
     newTr.html(strTr);
     newTr.appendTo("tbody");
     localStorage.setItem("key_" + index, strTr);
+    localStorage.setItem("id", (index + 1));
+    listDel = $("td[id*=del_]");
 }
 
 function isAlreadyPresent(newStudent) {
@@ -116,16 +120,28 @@ function isAlreadyPresent(newStudent) {
 
 function insertStorage() {
     var index = $("tr").length;
-    var newTr = $("<tr>");
-    
+
     if (localStorage.length > 0) {
         for (var i = 0; i < localStorage.length; i++) {
-            var newTr = $("<tr>");
+            var newTr = $("<tr id=\"tr_" + (index + i) + "\">");
             console.log(localStorage.getItem("key_" + (index + i)));
             newTr.html(localStorage.getItem("key_" + (index + i)));
             newTr.appendTo("tbody");
         }
     }
+    listDel = $("td[id*=del_]");
+    localStorage.setItem("id", listDel.length + 1);
 }
-
 insertStorage();
+
+
+listDel.click(function (e) {
+    var id = e.target.id.slice(4);
+    var trCancel = $("#tr_" + id);
+    
+    trCancel.remove();
+});
+
+function editTdOne() {
+    
+}
