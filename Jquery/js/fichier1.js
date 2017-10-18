@@ -79,5 +79,4 @@ $("#message").on('keyup', function(e) {
     });
    var nbMot = tableau2.length;
    nbM.text(nbMot);
-
- });
+});
