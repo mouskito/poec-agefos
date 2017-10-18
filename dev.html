@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrab/css/bootstrap.css">
+<head>
+	<title>Devoir</title>
+</head>
+<body>
+<div class="row">
+	<textarea name="name" id="textarea" onKeyUp="maxL();">
+	</textarea><br>
+    <p id="al">Votre texte ne doit pas dépasser 50 caractères!</p>	
+</div>
+
+<Script>
+
+function maxL()
+{   var nbre= document.getElementById("textarea").value;
+    var lgh= nbre.length;
+    for (var i =0;  i <= 50; i++)
+     {
+         document.body.style.color= 'red';
+         console.log('Votre texte ne doit pas dépasser 50 caractères!');
+     }
+    }
+      
+</Script>
+</body>
+</html>

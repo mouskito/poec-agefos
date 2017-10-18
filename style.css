@@ -1,0 +1,22 @@
+html{ font-style: italic;
+
+	background-color: purple;
+}
+.row{
+	border-radius: 30px;
+	background-color: pink;
+	padding-top: 50px;
+	margin-left: 100px;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#net{
+	border-radius: 30px;
+	background-color: green;
+	width: 120PX;
+	height: 20PX;
+	padding-top: 10px;
+	padding-left: 10px;
+	text-align: center;
+	padding-bottom: 50px;
+}
