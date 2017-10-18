@@ -26,3 +26,17 @@ thead {
 div#contain {
     margin-top: 32px;
 }
+
+.color-red {
+    background-color: #722;
+}
+
+.great-info {
+    border: 2px solid #373;
+    background-color: #ebfad7;
+}
+
+.bad-info {
+    border: 2px solid #722;
+    background-color: antiquewhite !important;
+}
