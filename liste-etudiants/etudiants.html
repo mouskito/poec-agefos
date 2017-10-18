@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etudiants</title>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/etudiants.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"></style>
+<link rel="stylesheet" type="text/css" href="css/etudiants.css">
+</head>
+<body>
+	<div class="row">
+		<form class="col-md-10 studentform" onclick="return addtolist()">
+			<label for="lastname">Nom</label>
+			<input type="text" name="lastname" id="lastname" placeholder="Nom">
+
+			<label for="lastname">Prénom</label>
+			<input type="text" name="firstname" id="firstname" placeholder="Prénom">
+
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="Email">
+
+			<input type="submit" value="Enregistrer">
+		</form>
+	</div>
+	<div class="row">
+		<div class="col-md-10 studentarray">
+			<table id="listarray">
+				<thead>
+					<tr class="row">
+						<th class="col-md-3">#</th>
+						<th class="col-md-3">Prénom</th>
+						<th class="col-md-3">Nom</th>
+						<th class="col-md-3">Email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

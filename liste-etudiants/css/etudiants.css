@@ -1,0 +1,15 @@
+body .studentform, .studentarray {
+	background-color: #dde9ed;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	margin-left: 8%;
+	margin-right: 8%;
+	padding-right: 4%;
+	padding-left: 4%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+.studentarray th {
+	background-color: black;
+	color: white;
+}
