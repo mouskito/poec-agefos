@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Liste des étudiants</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style-tp.css">
+</head>
+<body>
+
+    <div class="container">
+
+      <form class="form-signin" method="post" onSubmit="return ajouterEtudiant();" action ="#" name="formEleve">
+        <h2 class="form-signin-heading">Ajouter un étudiant</h2>
+
+
+        <label for="inputNom">Nom</label>
+        <input type="nom" id="inputNom" class="form-control" placeholder="Nom" required>
+
+        <label for="inputPrenom">Prénom</label>
+        <input type="prenom" id="inputPrenom" class="form-control" placeholder="Prénom" required>
+
+        <label for="inputEmail">Email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+
+                <button class="btn btn-lg btn-primary btn-block sign-in" type="submit">ajouter</button>
+
+      </form>
+      <h2 class="form-signin-heading">Liste des étudiants</h2>
+      <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  
+</table>
+
+    </div> <!-- /container -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/tp.js"></script>
+</body>
+
+</html>

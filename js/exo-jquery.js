@@ -8,10 +8,10 @@ for (var i = 0; i < p.length; i++) {
     
 }*/
 
-$('.maClasse2').css('backgroundColor', 'red');
+$('p').css('backgroundColor', 'red');
 
-$("img").each(function(i) {
+/*$("img").each(function(i) {
    this.src = "image"i".jpg";
    });
 
-$("img").length;
+$("img").length;*/
