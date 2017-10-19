@@ -3,13 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<title>Etudiants</title>
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/etudiants.js"></script>
-
 <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.css"></style>
 <link rel="stylesheet" type="text/css" href="css/etudiants.css">
 </head>
+
 <body>
+	<h1>Liste des étudiants inscrits</h1>
 	<div class="row">
 		<form class="col-md-10 studentform">
 			<label for="lastname">Nom</label>
@@ -24,10 +23,10 @@
 			<input type="button" value="Enregistrer" onclick="return addtolist()">
 		</form>
 	</div>
+
 	<div class="row">
-		<div class="col-md-10 studentarray">
-			<table id="listarray">
-				<thead>
+			<table id="listarray" class="col-md-10 studentarray">
+				<thead class="thead">
 					<tr class="row">
 						<th class="col-md-3">#</th>
 						<th class="col-md-3">Prénom</th>
@@ -38,7 +37,9 @@
 				<tbody>
 				</tbody>
 			</table>
-		</div>
 	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/etudiants.js"></script>
 </body>
+
 </html>
