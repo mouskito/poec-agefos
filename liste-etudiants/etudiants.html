@@ -7,37 +7,40 @@
 <link rel="stylesheet" type="text/css" href="css/etudiants.css">
 </head>
 
-<body>
+<body id="homepage">
+	<div class="container">
 	<h1>Liste des étudiants inscrits</h1>
-	<div class="row">
-		<form class="col-md-10 studentform">
+	<section class="secform">
+		<form class="studentform">
 			<label for="lastname">Nom</label>
 			<input type="text" name="lastname" id="lastname" placeholder="Nom">
 
 			<label for="lastname">Prénom</label>
-			<input type="text" name="firstname" id="firstname" placeholder="Prénom">
+			<input type="text" name="firstname" id="firstname" placeholder="Prénom"><br>
 
 			<label for="email">Email</label>
 			<input type="email" name="email" id="email" placeholder="Email">
 
 			<input type="button" value="Enregistrer" onclick="return addtolist()">
 		</form>
-	</div>
+	</section>
 
-	<div class="row">
-			<table id="listarray" class="col-md-10 studentarray">
+	<section class="sectable">
+			<table id="listarray" class="table studentarray">
 				<thead class="thead">
-					<tr class="row">
-						<th class="col-md-3">#</th>
-						<th class="col-md-3">Prénom</th>
-						<th class="col-md-3">Nom</th>
-						<th class="col-md-3">Email</th>
+					<tr>
+						<th>#</th>
+						<th>Prénom</th>
+						<th>Nom</th>
+						<th>Email</th>
 					</tr>
 				</thead>
 				<tbody>
+				
 				</tbody>
 			</table>
-	</div>
+	</section>
+</div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/etudiants.js"></script>
 </body>

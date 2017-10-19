@@ -1,26 +1,22 @@
-h1 {
-	text-align: center;
-	margin: 6%;
-}
+#homepage {
 
-body .studentform, .studentarray {
-	background-color: #dde9ed;
-	margin: 8%;
-	padding: 3%;}
+	.container {
+		width: 860px;
 
-body .thead {
-	background-color: black;
-	color: white;
 
-}
 
-.studentarray {
-	display: inline-block;
-	width: 100%;
-
-td, th {
-	margin: auto;
-	text-align: center;
-
-}
+		h1 {
+			text-align: center;
+			margin: 6%;
+		}
+		.secform, .sectable {
+			background-color: #dee9ed;
+			margin-bottom: 45px;
+			padding: 15px;
+		}
+		.sectable .thead {
+			background-color: black;
+			color: white;
+		}
+	}
 }
