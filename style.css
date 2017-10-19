@@ -1,29 +1,41 @@
-body {
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-.textFieldManager {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    text-align: center;
-}
-
-.inputFieldManager {
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
-
 .buttonManager {
-    display: inline-block;
-    vertical-align: top;
-    width: 310px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
+}
+
+.buttonDeleteManager {
+    margin-left: 300px;
+    width: 200px;
+    height: 80px;
+
+}
+
+
+.formManager {
+    display: none;
+}
+
+.deleteFormManager {
+    display: none;
+}
+
+.form-inline {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.form-group {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.cancelBtnManager {
+    background-color: darkred;
+}
+
+
+.btnRemoveManager {
+    position: absolute;
+    float: right;
 }
