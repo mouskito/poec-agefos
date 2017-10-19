@@ -1,0 +1,33 @@
+//capitaliser les noms et prenoms
+* {
+  margin:0px;
+  padding:0px;
+}
+#homepage{
+  .container{
+    width:900px;
+    background-color: #f5f5f5;
+    border-radius:5px;
+    text-align: center;
+    .block{
+      margin-bottom: 15px;
+    }
+
+    #nom{
+      text-transform: capitalize;
+    }
+    #prenom{
+      text-transform: capitalize;
+    }
+    #tab_eleve{
+      margin-bottom: 15px;
+    }
+    #erreur {
+      
+      color: white;
+      font-weight: lighter;
+      text-transform: uppercase;
+      height: 25px;
+    }
+  }
+}
