@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="tp.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row cont">
+			<h1 class="col-md-12">formulaire</h1>
+		</div>
+		<div class="row form"></br>
+			<form class="col-md-12" onsubmit="return myFunction()">
+			    <div class ="row">
+				    <h4 class="col-md-2 l">nom :</h4>
+				    <input class="col-md-2" id="nom">
+				</div></br>
+				<div class="row">
+				    <h4 class="col-md-2 l">prenom :</h4>
+				    <input class="col-md-2" id="prenom">
+				</div></br>
+				<div class="row">
+				    <h4 class="col-md-2 l">email :</h4>
+				    <input class="col-md-2" id="email" class="verifi">
+				</div></br></br>
+				<div class="row">
+				    <input class="col-md-offset-2 col-md-1" type="submit" value="envoiyer">
+				</div>
+			</form>
+		</div></br>
+		<div class="row liste" id="test">
+		    <div class="row">
+			     <h1 class="col-md-5">LISTE DES ETUDIENTS</h1>
+		    </div>
+		    <ul class="row lis">
+		        <li class="col-md-3">#</li>
+		        <li class="col-md-3">FIRST NAME</li>
+		        <li class="col-md-3">LAST NAME</li>
+		        <li class="col-md-3">USER NAME</li>
+		    </ul>
+		    <ul class="row ajou" id="aj">
+		        <li class="col-md-3">1</li>
+		        <li class="col-md-3">ALI</li>
+		        <li class="col-md-3">SEMSARI</li>
+		        <li class="col-md-3 verifi">@siamak</li>
+		    </ul>
+		    <ul class="row" id="ajout">
+		    </ul>
+		</div>
+		
+	</div>
+  <script type="text/javascript" src="tp.js"></script>
+  <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</body>
+</html>
