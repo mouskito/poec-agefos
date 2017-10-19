@@ -99,11 +99,12 @@ function ajouterEtudiant() {
     var compteurEtudiant = etudiants.length+1;
     var prenomEtudiant = document.getElementById('inputPrenom').value;
     var nomEtudiant = document.getElementById('inputNom').value;
+    var nomEtudiant = nomEtudiant.toUpperCase();
     var emailEtudiant = document.getElementById('inputEmail').value;
 
     //verifMail(emailEtudiant);
 
-    nouveauEtudiant.init( compteurEtudiant, nomEtudiant, prenomEtudiant,emailEtudiant);
+    nouveauEtudiant.init( compteurEtudiant, prenomEtudiant, nomEtudiant,emailEtudiant);
     etudiants.push(nouveauEtudiant);
     nouveauEtudiant.addRow();
     listeEtudiants();

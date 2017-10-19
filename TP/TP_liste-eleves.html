@@ -14,12 +14,11 @@
       <form class="form-signin" method="post" onSubmit="return ajouterEtudiant();" action ="#" name="formEleve">
         <h2 class="form-signin-heading">Ajouter un étudiant</h2>
 
+        <label for="inputPrenom">Prénom</label>
+        <input type="prenom" id="inputPrenom" class="form-control" placeholder="Prénom" required>
 
         <label for="inputNom">Nom</label>
         <input type="nom" id="inputNom" class="form-control" placeholder="Nom" required>
-
-        <label for="inputPrenom">Prénom</label>
-        <input type="prenom" id="inputPrenom" class="form-control" placeholder="Prénom" required>
 
         <label for="inputEmail">Email</label>
         <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
@@ -32,9 +31,9 @@
   <thead class="thead-inverse">
     <tr>
       <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
+      <th>Prénom</th>
+      <th>NOM</th>
+      <th>email</th>
     </tr>
   </thead>
   
