@@ -1,0 +1,35 @@
+.container{
+	background-color: #F5F5DC;
+}
+.row{
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 20px;
+
+}
+.identify{
+	margin-left: 75px;
+	border-radius: 30px;
+	border-style: solid;
+}
+#lst{
+	margin-left: 20px;
+}
+
+#name{
+	margin-left: 20px;
+}
+#email{
+	margin-left: 20px;
+}
+#send{
+	margin-top: 30px;
+	
+	margin-right: :200px;
+}
+.table{
+	padding-left: 70px;
+	
+	background-color: 	#FFE4B5;
+	padding-top: 50px;
+}

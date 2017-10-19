@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Nouvel Client</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrab/css/bootstrap.css">
+</head>
+<body class="container">
+<section class="identify">
+	  <div class="row" >
+	  	<div class="name">
+			<label for="name"> Name: </label>
+			<input type="text" name="" value=""  id="name"> 
+	  </div>
+	  <div class="lastname">
+	  	<label for="lastname"> LastName: </label>
+		<input type="text" name="" value=""   id="lastname" ></br>
+	  </div></br>
+	  <div>
+	  	<label for="email"> Email: </label>
+		<input type="email" name="email"    id="email">
+	  </div></br>
+	  <div id="send"></br>
+	  	<input type="submit" name="send" 
+	  	value="Sign in" onclick="add()"></br>
+	  	
+	  </div></div>
+
+</section>
+<section class="table">
+	<table id="tableau">
+  <thead>
+    <tr>
+      <th>Number</th>
+      <th> First Name</th>
+      <th> Last Name</th>
+      <th> Adresse-Email</th>
+      <th> Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> 1 </th>
+      <td class="r1">Rayane</td>
+      <td class="r2"=>Ayoubi</td>
+      <td class="r3">rayaneayoubi@hotmail.com</td>
+      <td>  
+      	<input type="submit" name="suprimer" value="Delete" class="Delete" onclick="delet4()">
+	    <input type="submit" name="modifier" value="modify" class="modifier" onclick=""></td>
+    </tr>
+    <tr>
+      <th scope="row"> 2 </th>
+      <td class="la1">Ilona</td>
+      <td class="la2">Orabi</td>
+      <td class="la3">ilonaorabi111@live.com</td>
+       <td>  <input type="submit" name="suprimer" value="Delete" class="Delete" onclick="delet3()">
+		   <input type="submit" name="modifier" value="modify" class="modifier" onclick=""></td>
+    </tr>
+    <tr>
+      <th scope="row" > 3 </th>
+      <td class="lal1" >Layal</td>
+      <td class="lal2">Issa</td>
+      <td class="lal3">layalissa@gmail.com</td>
+       <td>  <input type="submit" name="suprimer" value="Delete" class="Delete" onclick="delet2()">
+		   <input type="submit" name="modifier" value="modify" class="modifier" onclick=""></td>
+    </tr>
+     <tr>
+      <th scope="row"> 4 </th>
+      <td class="Layal">Layal</td>
+      <td class="issa">Issa</td>
+      <td class="emi">layalissa@hotmail.com</td>
+       <td>  <input type="submit" name="suprimer" value="Delete" class="Delete" id="del" 
+       	onclick="delet1()">
+		   <input type="submit" name="modifier" value="modify" class="modifier" id="mod" onclick="" ></td>
+    </tr>
+  </tbody>
+</table >
+</section>
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/tp.js">
+	</script>
+</body>
+</html>

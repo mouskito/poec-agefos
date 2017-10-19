@@ -1,0 +1,25 @@
+table {
+    width:80%;
+    color:#777;
+    margin-bottom:20px;
+    border-collapse: collapse;
+    border-spacing: 2;
+}
+table thead tr th {
+    font-weight:bold;
+}
+table tr {
+    border-bottom:1px solid #C0C0C0;
+}
+table th, table td {
+    padding:10px;
+}
+table tr:nth-child(odd) {
+    background:#F8F8F8;
+}
+table tr:hover {
+    background:#FFF6BF;
+}
+table thead tr, table thead tr:hover {
+    background:none!important;
+}
