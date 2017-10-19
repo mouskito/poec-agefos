@@ -12,6 +12,7 @@ var idStorage = 0;
 var tdsFirstname = "";
 var tdsSurname = "";
 var tdsMail = "";
+var test = "";
 
 surname.focus();
 
