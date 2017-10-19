@@ -29,11 +29,18 @@ function verif(nom,prenom,mail){
     }
   else{// si tout bon rajouter ligne :
     console.log(nom,prenom,mail);
-    insertEleve();
+    $('tabl_eleve').find('tbody').append([
+            '<tr>',
+                '<td>'+2+'</td>',
+                '<td>'+nom+'</td>',
+                '<td>'+prenom+'</td>',
+                '<td>'+mail+'</td>',
+            '</tr>'
+            ].join(''));
   }
 }
 
-function insertEleve(nom,prenom,mail){
+/*function insertEleve(nom,prenom,mail){
   nom = $("#nom").val();
   prenom = $("#prenom").val();
   mail = $("#mail").val();
@@ -46,3 +53,4 @@ $('tabl_eleve').find('tbody').append([
         '</tr>'
         ].join(''));
 }
+*/
