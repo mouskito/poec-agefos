@@ -9,6 +9,9 @@ var boolFirstname = false;
 var boolEmail = false;
 var listDel = "";
 var idStorage = 0;
+var tdsFirstname = "";
+var tdsSurname = "";
+var tdsMail = "";
 
 surname.focus();
 
@@ -120,11 +123,10 @@ function isAlreadyPresent(newStudent) {
 
 function insertStorage() {
     var index = $("tr").length;
-
-    if (localStorage.length > 0) {
-        for (var i = 0; i < localStorage.length; i++) {
+    console.log(localStorage);
+    if (localStorage.length - 1 > 0) {
+        for (var i = 0; i < localStorage.length - 1; i++) {
             var newTr = $("<tr id=\"tr_" + (index + i) + "\">");
-            console.log(localStorage.getItem("key_" + (index + i)));
             newTr.html(localStorage.getItem("key_" + (index + i)));
             newTr.appendTo("tbody");
         }
@@ -134,14 +136,51 @@ function insertStorage() {
 }
 insertStorage();
 
+tdsFirstname = $("tbody tr td:nth-of-type(2)");
+tdsSurname = $("tbody tr td:nth-of-type(3)");
+tdsMail = $("tbody tr td:nth-of-type(4)");
+
 
 listDel.click(function (e) {
     var id = e.target.id.slice(4);
     var trCancel = $("#tr_" + id);
-    
+
     trCancel.remove();
+    localStorage.removeItem("key_" + id);
 });
 
-function editTdOne() {
-    
-}
+tdsFirstname.click(function (e) {
+    var prenom = prompt("Veuillez indiquer le nouveau prénom : ");
+
+    if (prenom !== "" && prenom !== null && prenom) {
+        e.target.innerHTML = prenom;
+    } else {
+        alert("Le prénom n'a pas été renseigné correctement ! Veuillez réesayer.");
+    }
+});
+
+tdsSurname.click(function (e) {
+    var nom = prompt("Veuillez indiquer le nouveau nom : ");
+
+    if (nom !== "" && nom !== null && nom) {
+        e.target.innerHTML = nom;
+    } else {
+        alert("Le prénom n'a pas été renseigné correctement ! Veuillez réesayer.");
+    }
+});
+
+tdsMail.click(function (e) {
+    var mail = prompt("Veuillez indiquer le nouveau mail : ");
+
+    if (mail !== "" && mail !== null && mail) {
+        if (!regExpMail.test(mail)) {
+            alert("Le mail renseigné n'est pas un mail valide. Veuillez recommencer l'opération.");
+        } else if (isAlreadyPresent(mail))
+            alert("Ce mail est déjà utilisé par un autre utilisateur, veuillez renseigner un autre mail !");
+        else
+            e.target.innerHTML = mail;
+    }
+    else {
+         alert("Le mail n'a pas été renseigné correctement ! Veuillez réesayer.");
+    }
+});
