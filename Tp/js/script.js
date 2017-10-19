@@ -133,6 +133,7 @@ function insertStorage() {
     }
     listDel = $("td[id*=del_]");
     localStorage.setItem("id", listDel.length + 1);
+    modifyId();
 }
 insertStorage();
 
@@ -143,10 +144,15 @@ tdsMail = $("tbody tr td:nth-of-type(4)");
 
 listDel.click(function (e) {
     var id = e.target.id.slice(4);
+    console.log(id);
     var trCancel = $("#tr_" + id);
 
-    trCancel.remove();
-    localStorage.removeItem("key_" + id);
+    trCancel.hide("slow", function () {
+        trCancel.remove();
+        localStorage.removeItem("key_" + id);
+        organizeStorage(parseInt(id) + 1);
+        modifyId();
+    });
 });
 
 tdsFirstname.click(function (e) {
@@ -179,8 +185,26 @@ tdsMail.click(function (e) {
             alert("Ce mail est déjà utilisé par un autre utilisateur, veuillez renseigner un autre mail !");
         else
             e.target.innerHTML = mail;
-    }
-    else {
-         alert("Le mail n'a pas été renseigné correctement ! Veuillez réesayer.");
+    } else {
+        alert("Le mail n'a pas été renseigné correctement ! Veuillez réesayer.");
     }
 });
+
+function organizeStorage(index) {
+        console.log("index en cours : " +index);
+    while (index < localStorage.length) {
+        console.log(localStorage.getItem("key_" + index));
+        index++;
+    }
+    console.log(index);
+}
+
+function modifyId() {
+    var listId =  $("tbody tr td:nth-of-type(1)");
+    
+    for (var i = 0; i < listId.length; i++) {
+        listId[i].innerHTML = i + 1;
+    }
+}
+
+//localStorage.clear();
