@@ -64,7 +64,7 @@ var Etudiant = {
         tr.appendChild(tdPrenom);
         var textPrenom = document.createTextNode(this.prenom);
         td.appendChild(textPrenom);*/
-        var ajouterLigne = $('table').prepend(`
+        var ajouterLigne = $('table').append(`
             <tbody>
                 <tr id = "row1">
                   <td>`+this.compteur+`</td>
@@ -79,16 +79,8 @@ var Etudiant = {
 
 };
 
-var etudiant1 = Object.create(Etudiant);
-etudiant1.init(0,"Mark", "Otto", "@mdo");
-var etudiant2 = Object.create(Etudiant);
-etudiant2.init(1,"Jacob", "Thornton", "@fat");
-
 // création du tableau  
 var etudiants = [];
-etudiants.push(etudiant1);
-etudiants.push(etudiant2);
-
 
 function listeEtudiants() {
     console.log("Voici la liste de tous les étudiants");
@@ -104,7 +96,7 @@ listeEtudiants();
 function ajouterEtudiant() {
     
     var nouveauEtudiant = Object.create(Etudiant);
-    var compteurEtudiant = 3;
+    var compteurEtudiant = etudiants.length+1;
     var prenomEtudiant = document.getElementById('inputPrenom').value;
     var nomEtudiant = document.getElementById('inputNom').value;
     var emailEtudiant = document.getElementById('inputEmail').value;
@@ -115,6 +107,7 @@ function ajouterEtudiant() {
     etudiants.push(nouveauEtudiant);
     nouveauEtudiant.addRow();
     listeEtudiants();
+    console.log(etudiants.length);
 
 
     return false;
