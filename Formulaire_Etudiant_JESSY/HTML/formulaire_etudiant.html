@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulaire étudiants à rendre (noté)</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../CSS/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/formulaire_etudiant.css">
+</head>
+
+<body>
+		<div class="container">
+				<div class="formulaire background-form">
+				<h1>Formulaire</h1>
+						<form class="row" method="post" name="formulaire" oncubmit="return validationDuFormulaire()">
+							<div class="col-md-6">
+								<label for="">Prénom :
+									<input type="text" name="prenom" placeholder="Entrez votre prénom" id="prenom">
+								</label>
+							</div>
+
+							<div class="col-md-6">
+								<label>Nom :
+									<input type="text" name="nom" placeholder="Entrez votre nom" id="nom">
+								</label>
+							</div>
+
+							<div class="col-md-6">
+								<label>E-mail :
+									<input type="text" name="email" placeholder="Entrez votre E-mail" id="email">
+								</label>
+							</div>
+
+							<div class="erreur">
+								
+							</div>
+
+								<input type="button" name="valider" class="btn btn-primary" value="S'enregistrer" id="submit" onclick="validationDuFormulaire()">
+
+						</form>	
+				</div>
+
+				<div class="liste-etudiant background-form" class="row">
+				<h1>Liste des étudiants</h1>
+						<table class="table" id="tableau-etudiants">
+							  <thead class="background-item-liste-etudiants">
+							    <tr>
+							      <th>#</th>
+							      <th>First Name</th>
+							      <th>Last Name</th>
+							      <th>Email</th>
+							      <th>Action</th>
+							    </tr>
+							  </thead>
+							  <tbody>  
+							  </tbody>
+						</table>
+				</div>
+
+		</div>
+<script type="text/javascript" src="../JAVASCRIPT/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../JAVASCRIPT/formulaire_etudiant.js"></script>
+</body>
+</html>
