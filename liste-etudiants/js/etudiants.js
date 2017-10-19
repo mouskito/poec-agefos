@@ -1,13 +1,42 @@
+function verifyForm () {
+	var firstname = document.getElementById("firstname").value;
+	var lastname = document.getElementById("lastname").value;
+	var email = document.getElementById("email").value;
+
+	if (firstname === "") {
+		return false;
+	}
+	if (lastname === "") {
+		return false;
+	}
+
+	if (email === "") {
+		return false
+	}
+	return true;
+}
+
 function addtolist () {
 
-var listarray = document.getElementById("listarray");
+	if (!verifyForm ()) {
+		return;
+	}
 
-var row	= listarray.insertRow(1);
+	var listarray = document.getElementById("listarray");
 
-var column1 = row.insertCell(0);
-column1.innerHTML += document.getElementById("firstname").value;
+	var count = listarray.tBodies[0].getElementsByTagName('tr').length;
+	var row	= listarray.tBodies[0].insertRow(-1);
 
-return column1;
+	var column1 = row.insertCell(0);
+	var column2 = row.insertCell(1);
+	var column3 = row.insertCell(2);
+	var column4 = row.insertCell(3);
+
+	column1.innerHTML += count +1;
+	column2.innerHTML += document.getElementById("firstname").value;
+	column3.innerHTML += document.getElementById("lastname").value;
+	column4.innerHTML += document.getElementById("email").value;
+
 }
 /*
 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Etudiants</title>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/etudiants.js"></script>
@@ -10,7 +11,7 @@
 </head>
 <body>
 	<div class="row">
-		<form class="col-md-10 studentform" onclick="return addtolist()">
+		<form class="col-md-10 studentform">
 			<label for="lastname">Nom</label>
 			<input type="text" name="lastname" id="lastname" placeholder="Nom">
 
@@ -20,7 +21,7 @@
 			<label for="email">Email</label>
 			<input type="email" name="email" id="email" placeholder="Email">
 
-			<input type="submit" value="Enregistrer">
+			<input type="button" value="Enregistrer" onclick="return addtolist()">
 		</form>
 	</div>
 	<div class="row">
@@ -35,12 +36,6 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
 				</tbody>
 			</table>
 		</div>
