@@ -1,0 +1,22 @@
+#homepage {
+
+	.container {
+		width: 860px;
+
+
+  
+		h1 {
+			text-align: center;
+			margin: 6%;
+		}
+		.secform, .sectable {
+			background-color: #dee9ed;
+			margin-bottom: 45px;
+			padding: 15px;
+		}
+		.sectable .thead {
+			background-color: black;
+			color: white;
+		}
+	}
+}

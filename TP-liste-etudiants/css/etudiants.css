@@ -1,0 +1,14 @@
+#homepage .container {
+  width: 860px; }
+  #homepage .container h1 {
+    text-align: center;
+    margin: 6%; }
+  #homepage .container .secform, #homepage .container .sectable {
+    background-color: #dee9ed;
+    margin-bottom: 45px;
+    padding: 15px; }
+  #homepage .container .sectable .thead {
+    background-color: black;
+    color: white; }
+
+/*# sourceMappingURL=etudiants.css.map */
