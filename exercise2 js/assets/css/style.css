@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0
+}
+
+section{
+    height: 700px;
+    margin-top: 20Px
+}
+.war1{
+    background-color: #cddbf2;
+    height: 320px
+}
+
+.war2{
+    background-color:#cddbf2;
+    height: auto;
+    margin-top:40px 
+}
+label{
+    margin-top: 20Px
+}
+
+#delete{
+    cursor: pointer
+}
+
+#edit{
+    cursor: pointer
+}
