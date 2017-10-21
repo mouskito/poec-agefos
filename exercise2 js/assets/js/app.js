@@ -41,7 +41,7 @@ function addListItem() {
         }
     } else {
 
-        $("#todo-list ,#lastname ").append('<tr><td>' + first + '</td><td>' + last + '</td><td>' + mail + '</td><td onClick="test()">' + del + '</td><td>' + edit + '</td></tr>');
+        $("#todo-list ,#lastname ").append('<tr id="saj"><td>' + first + '</td><td>' + last + '</td><td>' + mail + '</td><td onclick="supprime()">' + del + '</td><td onclick="modific()">' + edit + '</td></tr>');
 
 
         // $("#delete").click, function () {
@@ -58,13 +58,17 @@ function addListItem() {
 };
 
 
-function test() {
-    alert('et voila')
+function supprime() {
+ 
+   
+    $("#saj").remove();
     
-    $("#delete").remove();
+};
 
+
+function modific(){
+    $("#saj").attr('contenteditable','true');
 }
-
 
 
 function validateEmail() {
@@ -85,3 +89,33 @@ function validateEmail() {
 
     }
 };
+
+
+/*function verifEmail () {
+
+	var tdAllMail = $("tbody tr td:nth-of-type(4)");
+	var email = document.getElementById("email").value;
+
+	for (var i = 0; i < tdAllMail.length; i++) {
+		if (email === tdAllMail[i].innerHTML) {
+			return false;
+		}
+	}
+	return true;
+}
+
+verifEmail(); 
+
+function addtolist () {
+
+	if (!verifyForm()) {
+		alert ("Merci de renseigner correctement tous les champs.")
+		return;
+	
+	}
+	if (!verifEmail()) {
+		alert ("Cette adresse email existe déjà.");
+		return;
+	}
+    
+    addtolist();*/

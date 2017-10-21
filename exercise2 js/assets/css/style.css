@@ -22,9 +22,14 @@ label{
 }
 
 #delete{
-    cursor: pointer
+    cursor: pointer;
+    color: red
+        
 }
 
+
+
 #edit{
-    cursor: pointer
+    cursor: pointer;
+    color:darkslateblue
 }
