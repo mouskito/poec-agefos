@@ -45,23 +45,29 @@ function inserTableau() {
 	tableau = document.getElementById("televes")
 	newligne = tableau.insertRow(-1);
 	id = newligne.insertCell(0);
-	nom = newligne.insertCell(1);
-	prenom = newligne.insertCell(2);
+	prenom = newligne.insertCell(1);
+	nom = newligne.insertCell(2);
 	email = newligne.insertCell(3);
 
 	id.innerHTML += 5; // variable test, je n'ai pas eu le temps de faire la fonction compteur
 	nom.innerHTML += $('#nom').val();
 	prenom.innerHTML += $('#prenom').val();
 	email.innerHTML += $('#email').val();
+	countLines();
 }
 
 function verifUniq() {
 
-	var tdsemail = $("tr td:nth-of-type(4)");
+	tdsemail = $("tr td:nth-of-type(4)");
 	for (var i = 0; i < tdsemail.length; i++) {
 		if ($('#email').val() === tdsemail[i].innerHTML) {
-			alert("l'utilisateur existe déjà");
+			alert("L'utilisateur existe déjà");
         	return false;
 			}
 		} inserTableau();
 };
+
+function countLines(){
+ total_lines = document.getElementById("televes").getElementsByTagName("TR").length;	
+console.log(total_lines);
+}
