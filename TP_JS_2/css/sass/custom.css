@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+#homepage {
+  background-color: #fdfdfd; }
+  #homepage .container {
+    width: 860px;
+    background: #0b0f38;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none; }
+    #homepage .container h1 {
+      font-weight: 100;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 30px; }
+    #homepage .container .row {
+      margin: 10px 0px 20px 0px;
+      text-align: center; }
+    #homepage .container .mailIn {
+      margin: 10px 0px 20px 0px;
+      text-align: center; }
+    #homepage .container label {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: lighter; }
+    #homepage .container input {
+      border-radius: 2px;
+      border: none; }
+    #homepage .container .subIn {
+      text-align: center; }
+      #homepage .container .subIn #formSubmit {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #c6c8ca;
+        color: #ffffff;
+        background-color: #0b0e39;
+        font-weight: 100; }
+    #homepage .container #tableSection {
+      padding-bottom: 20px; }
+      #homepage .container #tableSection .studTab {
+        width: 830px; }
+        #homepage .container #tableSection .studTab thead {
+          color: #0b0e39;
+          text-align: center; }
+        #homepage .container #tableSection .studTab .lnCell {
+          text-transform: uppercase; }
+        #homepage .container #tableSection .studTab .fnCell {
+          text-transform: capitalize; }
+
+/*# sourceMappingURL=custom.css.map */

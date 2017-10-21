@@ -1,0 +1,69 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#homepage{
+  background-color: #fdfdfd;
+  .container{
+    width: 860px;
+    background: #0b0f38;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    h1{
+      font-weight: 100;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .row{
+      margin: 10px 0px 20px 0px;
+      text-align: center;
+    }
+    .mailIn{
+      margin: 10px 0px 20px 0px;
+      text-align: center;
+    }
+    label{
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: lighter;
+    }
+    input{
+      border-radius: 2px;
+      border: none;
+    }
+
+    .subIn{
+      text-align: center;
+      #formSubmit{
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid #c6c8ca;
+        color: #ffffff;
+        background-color: #0b0e39;
+        font-weight: 100;
+      }
+    }
+
+    #tableSection{
+      padding-bottom:20px;
+      .studTab{
+        width: 830px;
+        thead{
+          color:#0b0e39;
+          text-align: center;
+        }
+        .lnCell{
+          text-transform: uppercase;
+        }
+        .fnCell{
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
