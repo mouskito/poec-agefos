@@ -6,22 +6,21 @@ function verif(nom,prenom,mail){
   prenom = $("#prenom").val();
   mail = $("#mail").val();
   var regex =	/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if (nom === "" || !isNaN(nom)){
+  if (nom === "" || prenom === "" || mail === ""){
+    if (nom === ""){
       msgError.html("\*Vous devez renseigner correctement les champs !");
       msgError.css("background-color","#ff5f57");
       $("#nom").focus();
       $("#nom").css("background-color","#f2dede");
       return false;
     }
-    if (prenom === "" || !isNaN(prenom)){
+    if (prenom === ""){
         msgError.html("\*Vous devez renseigner correctement les champs  !");
         msgError.css("background-color","#ff5f57");
         $("#prenom").focus();
         $("#prenom").css("background-color","#f2dede");
         return false;
       }
-
     if (mail === ""){
           msgError.html("\*Vous devez renseigner correctement les champs ! !");
           msgError.css("border-color","red");
@@ -33,7 +32,23 @@ function verif(nom,prenom,mail){
         msgError.css("background-color","#be57ff");
         $("#mail").css("background-color","#eed2ff");
         return false;
-    }else {// si tout bon rajouter ligne :
+  } else if (!isNaN(nom) || !isNaN(prenom)){
+    if (!isNaN(nom)){
+      msgError.html("\*Ne pas saisir de chiffres !");
+      msgError.css("background-color","red");
+      $("#nom").focus();
+      $("#nom").css("background-color","#f2dede");
+      return false;
+    }
+    if (prenom === ""){
+        msgError.html("\*Ne pas saisir de chiffres ! !");
+        msgError.css("background-color","red");
+        $("#prenom").focus();
+        $("#prenom").css("background-color","#f2dede");
+        return false;
+      }
+  }
+  }else {// si tout bon rajouter ligne :
     ajoutLigne(nom,prenom,mail);
   }
 }

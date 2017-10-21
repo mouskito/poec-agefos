@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TP</title>
+    <link rel="stylesheet" href="../css/sass/custom.css" type="text/css">
+  	<link rel="stylesheet" href="../css/bootstraps/css/bootstrap.css" type="text/css">
+  </head>
+  <body id="homepage">
+
+    <div class="container formulaire">
+      <form id="form_eleve">
+
+        <h3>Ajouter un élève : </h3>
+        <div class="row">
+          <p class="col-md-6 block">
+            <label>Nom : </label>
+            <input type="text" id="nom" required></input><span id="nbError1"></span>
+          </p>
+          <p class="col-md-6 block">
+            <label>Prénom : </label>
+            <input type="text" id="prenom" required></input><span id="nbError2"></span>
+          </p>
+        </div>
+
+        <div class="row">
+          <p class="col-md-6 block">
+            <label>Mail : </label>
+            <input type="email" id="mail" required></input>
+          </p>
+        </div>
+      <p id="erreur"></p>
+
+        <input type="submit" value="Ajouter" id="envoyer" onclick="validation()"></input>
+
+      </form>
+
+      <div class="container tableau">
+        <h3>Liste des élèves : </h1>
+          <table class="table table-inverse" id="tab_eleve">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Mail</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" id="nbr">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+              <td>mo@mdo.com</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  </script><script src="../js/op_tp.js"></script>
+  </body>
+</html>
