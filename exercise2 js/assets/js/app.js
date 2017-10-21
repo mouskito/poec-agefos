@@ -41,12 +41,14 @@ function addListItem() {
         }
     } else {
 
-        $("#todo-list ,#lastname ").append('<tr><td>' + first + '</td><td>' + last + '</td><td>' + mail + '</td><td>' + del + '</td><td>' + edit + '</td></tr>');
+        $("#todo-list ,#lastname ").append('<tr><td>' + first + '</td><td>' + last + '</td><td>' + mail + '</td><td onClick="test()">' + del + '</td><td>' + edit + '</td></tr>');
 
 
-        $("#delete").on("click", function () {
-            $(this).closest("tr").remove();
-        });
+        // $("#delete").click, function () {
+        //     alert('test')
+        //     console.log(  $(this).closest("tr"))
+        //     //$(this).closest("tr").remove();
+        // };
 
 
 
@@ -56,7 +58,12 @@ function addListItem() {
 };
 
 
+function test() {
+    alert('et voila')
+    
+    $("#delete").remove();
 
+}
 
 
 
