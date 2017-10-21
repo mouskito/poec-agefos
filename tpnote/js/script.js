@@ -1,6 +1,4 @@
 
-
-
 function verifForm(){
 	
 	var regmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -29,13 +27,12 @@ if 	($('#email').val() == "") {
 			$('#email').css("backgroundColor", "#f2dede");
 			return false;
 			}
-			else if (regmail.test(($('#email').val())))
-					{
+			else if (!regmail.test(($('#email').val()))) {
+					
 						alert ("Attention, le format de l'email n'est pas correct \n\n ");
 						$('#email').focus();
 						$('#email').css("backgroundColor", "#f2dede");
-						// y a un souci avec le regex : quand l'adresse est bonne, ça marche pas :p j'ai pas eu le temps de corriger comme je dois m'absenter cet après midi
-
+						return false;
 					}
 		verifUniq();
 		
