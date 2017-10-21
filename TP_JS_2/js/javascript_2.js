@@ -17,31 +17,6 @@ function  chpVide (){
   }
 }
 
-
-
-
-
-function errorSaisie(element) {
-    element.style.borderColor="red";
-    element.style.backgroundColor="red";
-    element.style.color="white";
-}
-
-function verifSaisie(){
-  if (!isNaN(nom)){
-    errorSaisie(chpNom);
-     return false;
-  }
-  if(!isNaN(prenom)){
-    errorSaisie(chpPrenom);
-    return false;
-  }
-  if (!mailValid.test(mail)){
-    errorSaisie(chpMail);
-    return false;
-  }
-}
-
 // verification mail existant : push mail dans tableau
 mails=["mo@mdo.com",]
 
