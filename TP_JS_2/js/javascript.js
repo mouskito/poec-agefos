@@ -47,7 +47,7 @@ function validationMail()
 }
 
 //---TABLEAU MAILS---//
-var mails=["mo@mdo.com",]
+var mails=["mo@mdo.com","aaa@aa.com","bbb@bb.com"]
 
 //verifier les champs :
 function  verify()
@@ -71,14 +71,13 @@ function  verify()
     {
       if (mails[i] === mail)
       {
-        i = mails.length;
         alert("L'adresse mail que vous avez saisie existe déjà !");
-        chpMail.focus();
-        chpMail.style.border = "3px solid red";
         return false;
+        i = mails.length;
       } else {
-        mails.push(mail);
-        
+        console.log(mails[i]);
+        //mails.push(mail);
+
       }
     }
   }
