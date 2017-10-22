@@ -1,6 +1,6 @@
 // evenements lors saisie :
-document.getElementById("studLastN").addEventListener("keypress", errorLastN);
-function errorLastN()
+document.getElementById("studLastN").addEventListener("keypress", verifLastN);
+function verifLastN()
 {
   var nom = document.getElementById("studLastN").value;
   var chpNom = document.getElementById("studLastN");
@@ -14,8 +14,8 @@ function errorLastN()
   }
 }
 
-document.getElementById("studFirstN").addEventListener("keypress", errorFirstN);
-function errorFirstN()
+document.getElementById("studFirstN").addEventListener("keypress", verifFirstN);
+function verifFirstN()
 {
   var prenom = document.getElementById("studFirstN").value;
   var chpPrenom = document.getElementById("studFirstN");
@@ -64,21 +64,43 @@ function  verify()
     alert("Vous devez renseigner tous les champs !");
     return false;
   }
-
-  if(validationMail () === true)
+  else if(validationMail () === true)
   {
     for (var i=0; i < mails.length; i++)
     {
       if (mails[i] === mail)
       {
         alert("L'adresse mail que vous avez saisie existe déjà !");
-        return false;
-        i = mails.length;
-      } else {
         console.log(mails[i]);
         //mails.push(mail);
-
+        return false;
+        i = mails.length;
       }
+
     }
+  }
+  else if (validationMail () === false)
+  {
+    alert("L'adresse mail que vous avez saisie est incorrect !")
+    chpMail.focus();
+    chpMail.style.backgroundColor="red";
+    return false;
+  }
+  else
+  {
+  var totalLine = document.querySelectorAll("tr");
+  var newLine = totalLine.length;//nombre ligne total:4
+  var table = document.getElementsByTagName("tbody")[0];
+  var row = table.insertRow(table.rows.length);
+  var row1 = row.insertCell(0);
+  var row2 = row.insertCell(1);
+  var row3 = row.insertCell(2);
+  var row4 = row.insertCell(3);
+  row1.innerHTML += newLine// function compteur de row
+  row2.innerHTML += nom;
+  row3.innerHTML += prenom;
+  row4.innerHTML += mail;
+  mails.push(mail);
+  console.log(mail);
   }
 }
