@@ -1,4 +1,23 @@
 
-.registration_page, .table {
+.registration_page {
     margin-top: 50px;
+    background-color: darkgray;
+}
+
+.submit_div {
+    margin-bottom: 70px;
+}
+
+#nom {
+    text-transform: uppercase;
+}
+
+#prenom {
+    text-transform: capitalize;
+}
+
+.foooter {
+    background-color: darkgray;
+    height: 40px;
+    
 }

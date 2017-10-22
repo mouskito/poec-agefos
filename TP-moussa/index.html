@@ -38,47 +38,51 @@
                     <form class="form-horizontal" action="#" method="POST" name="form" onSubmit="return registration();">
                         <fieldset>
                             <div id="legend">
-                                <legend class="">Register</legend>
+                                <legend class=""><h1><strong>Enregistrement</strong></h1></legend>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="nom">NOM</label>
                                 <div class="controls">
-                                    <input type="text" id="nom" name="nom" placeholder="" class="form-control input-lg">
+                                    <input type="text" id='nom' name="nom" placeholder="" class="form-control input-lg">
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label" for="prenom">Prénom</label>
                                 <div class="controls">
-                                    <input type="text" id="prenom" name="prenom" placeholder="" class="form-control input-lg">
+                                    <input type="text" id='prenom' name="prenom" placeholder="" class="form-control input-lg">
                                 </div>
                             </div>
 
                             <div class="control-group">
                                 <label class="control-label" for="email">E-mail</label>
                                 <div class="controls">
-                                    <input type="email" id="email" name="email" placeholder="" class="form-control input-lg">
+                                    <input type="email" id='email' name="email" placeholder="" class="form-control input-lg">
                                 </div>
                             </div><br>
 
-                            <div class="control-group">
+                            <div class="control-group submit_div">
                                 <!-- Button -->
                                 <div class="controls">
-                                    <input type="submit" class="btn btn-success btn-sign-in" id="signup">Sign Up>
+                                    <input type="submit" class="btn btn-success btn-sign-in" id="signup" value="Sign Up" onclick="registration();">
                                 </div>
                             </div>
                             <table class="table" id="table">
                                 <thead class="thead-inverse">
+                                <h1><strong>Listes d'étudiants</strong></h1>
+                                <!--<tr><input type="button" id="delete" value="Delete" class="btn-danger"></tr>
+                                <tr><input type="button" id="edit" value="Edit" class="btn-success"></tr>-->
                                 <tr>
-                                    <td>#</td>
-                                    <!--<th>Select</th>-->
+
                                     <td>NOM</td>
                                     <td>Prénom</td>
                                     <td>Email</td>
-                                    <td>Delete</td>
-                                    <td>Edit</td>
+
                                 </tr>
+
                                 </thead>
+
                                 <tbody class="tbody">
+
 
                                 </tbody>
                             </table>
