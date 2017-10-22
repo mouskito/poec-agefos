@@ -42,18 +42,18 @@ if 	($('#email').val() == "") {
 
 function inserTableau() {
 
-	tableau = document.getElementById("televes")
+	tableau = document.getElementById("televes");
 	newligne = tableau.insertRow(-1);
 	id = newligne.insertCell(0);
 	prenom = newligne.insertCell(1);
 	nom = newligne.insertCell(2);
 	email = newligne.insertCell(3);
 
-	id.innerHTML += 5; // variable test, je n'ai pas eu le temps de faire la fonction compteur
-	nom.innerHTML += $('#nom').val();
-	prenom.innerHTML += $('#prenom').val();
+	
+	id.innerHTML += $("#televes").find('tr').length - 1;
+	nom.innerHTML += $('#nom').val().toUpperCase();
+	prenom.innerHTML += $('#prenom').addClass('capitalise').val();
 	email.innerHTML += $('#email').val();
-	countLines();
 }
 
 function verifUniq() {
@@ -65,9 +65,5 @@ function verifUniq() {
         	return false;
 			}
 		} inserTableau();
-};
-
-function countLines(){
- total_lines = document.getElementById("televes").getElementsByTagName("TR").length;	
-console.log(total_lines);
 }
+

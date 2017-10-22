@@ -1,5 +1,6 @@
 #form {
 	background-color: #E9ECEF;
+	font-weight: bold;
 }
 
 #televes {
@@ -9,6 +10,11 @@ background-color : #E9ECEF;
 #valid{
 	background-color: #007BFF;
 	color: white;
+}
+
+.capitalise
+{
+    text-transform:capitalize;
 }
 
 /* bouton valider sign in : #222529 */
