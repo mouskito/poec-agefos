@@ -8,6 +8,8 @@
     margin-bottom: 70px;
 }
 
+/* Capitalize the letters */
+
 #nom {
     text-transform: uppercase;
 }
