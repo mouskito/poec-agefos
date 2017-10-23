@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Javascript</title>
+	<link rel="icon" type="image/png" href="../img/icone.jpg" />
+	<link rel="stylesheet" href="../css/bootstrap/css/bootstrap.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+</head>
+<body id="homepage">
+
+	 <header>
+        <div class="row mr-3">
+        	<div class="col-md-9">
+        		<div class="row">
+	        		<h1 class="col-md-6 pt-2">Exercice Javascript</h1>
+	        		<nav class="col-md-6 menu">
+	        			<ul class="menu">
+	        				<li><a href="index.html">Exo 1</a></li>
+	        				<li><a href="#">Exo 2</a></li>
+	        				<li><a href="#">Exo 3</a></li>
+	        				<li><a href="#">Exo 4</a></li>
+	        				<li><a href="#">Exo 5</a></li>
+	        			</ul>
+	        		</nav>
+        		</div>
+        	</div>
+        	<div class="col-md-3">
+        		<form>
+                    <input type="text" name="utilisateur" placeholder="Entre votre login" id="utilisateur">
+                    <input type="password" name="password" placeholder="Entre votre mot de passe"  id="password">
+                    <input type="submit" name="sign-in" value="Sign in" id="signin">
+                    <input type="submit" name="sign-up" value="Sign up" id="signup">
+                </form>
+        	</div>
+        </div>
+    </header>
+    <div class="container">
+    	<div class="row">
+    		<h2 class="col-md-12 pt-5 text-center tp">TP</h2>
+    		<div class="col-md-10 mt-3 bloc">
+                <div class="row">
+                    <div class="col-md-9 mt-5 ml-3 mb-3 signin">
+                        <div class="col-md-12 pt-3">
+                             Prénom : <input type="text" name="prenom" id="prenom" class="ml-4" placeholder="Entre votre prénom" />
+                        </div>
+                        <div class="col-md-12 pt-3">
+                             Nom : <input type="text" name="nom" id="nom" class="ml-5" placeholder="Entre votre nom"/>
+                        </div>
+                        <div class="col-md-12 pt-3">
+                             Email : <input type="text" name="email" id="email" class="ml-5" placeholder="Entre votre email"/>
+                        </div>
+                        <div class="col-md-12 ml-5 pt-3 pb-3">
+                             <input type="submit" name="Valider" class="ml-5"  onclick="ajouter()" value="Valider"/>
+                        </div>
+                        <div class="col-md-12 mt-2 text-center" id="erreur">
+
+                        </div>        
+                    </div>
+                    <div class="col-md-11 mt-5 ml-3 mb-3 list">
+                        <h2>Liste des etudiants</h2>
+                                <table class="table" id="table">
+                                      <thead class="thead-inverse">
+                                        <tr>
+                                          <th>ID</th>
+                                          <th>Prénom</th>
+                                          <th>Nom</th>
+                                          <th>Email</th>
+                                          <th>Supprimer</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        
+                                      </tbody>
+                                    </table>
+                    </div>
+                </div>
+    		</div>   
+    	</div>
+    </div>
+    <footer class="container mt-5 mb-3 footer">
+                    <div class="txtbloc1">Copyright Abdel Messaoudi Theme. All rights reserved.</div>
+                    <div class="txtbloc2">Exercice javascript</div>
+    </footer>
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/fichier1.js"></script>
+</body>
+</html>
