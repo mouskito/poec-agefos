@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrab/css/bootstrap.css">
+
+<head>
+	<title>contact</title>
+</head>
+<body>
+	<div id="div1" class="col-md-6"  style="width:200px;height:180px;display:none;background-color:#CCFF33;"><P>you Have to remember it!!!!! </P></div>
+	<section id="identification">
+         <div class="row">
+         	<div class="col-md-6">
+         	   <label for="name">Name:</label>
+         	   <input type="text" name="name" id="name"></div>
+         	<div class="col-md-6">
+         		<label for="lastname">Lastname:</label>
+         		<input type="text" name="lastname" id="lastname"></div>
+         	<div class="col-md-6">
+         		<label for="email">Email:</label>
+         		<input type="email" name="email" id="email"></div>
+         	<div class="col-md-6">
+         		<input type="submit" name="sign in" value="sign in"  onclick="add()">
+         		<input type="submit" name="forg" value="forgot email" id="forg" onclick="forgot()"></div>
+         	</div>
+       </section>
+    <div class="tableau">
+       <h2><em>The list of candidates</em></h2>
+        <table class="table-table-bordered" id="tableau">
+    		<thead>
+    			<tr>
+                    <th>Firstname</th>
+    				<th>Lastname</th>
+    				<th>Email</th>
+    		    </tr>
+    		</thead>
+    		<tbody>
+    			<tr>
+    		        <th>rayane</th>
+    				<th>ALayoubi</th>
+    				<th>rayaneayoubi@hotmail.com</th>
+    			</tr>
+    			<tr>
+    		        <th>Ilona</th>
+    				<th>Orabi</th>
+    				<th>ilonaorabi@hotmail.com</th>
+    			</tr>
+    			<tr>
+    				<th>Benoit</th>
+    				<th>Orabi</th>
+    				<th>benoitorabi@aol.com</th>
+    			</tr>
+    		</tbody>
+        </table>
+    </div>
+    <section class="col-md-6">
+        <p><em>Please put your message here :</em> </p>
+    	<form name="formulaire" method="get" action="nom de la page actuelle">
+ 
+        <textarea style="width :300px"; height :100px;" name="message"></textarea><br/>
+ 
+        <p>Il vous reste <input type="text" disabled name="carac" style="width :30px;" /> caractères sur 200.
+ 
+     <input type="button" value="OK" onclick="this.form.submit()" />
+     </form>
+    </section>
+    <footer class="info">
+    <div ><input type="radio" name="cu">contact us</input></div>
+    <div><input type="radio" name="dir">Direction</input></div>
+    <div><input type="radio" name="inf">For more infos</input></div>
+    </footer>
+
+
+
+    	
+
+
+
+
+
+ 
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="pjs/page.js"></script>
+
+</body>
+</html>
