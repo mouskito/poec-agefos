@@ -3,7 +3,7 @@ function add(){
 	var lastname = $("#lastname").val();
     var email = $("#email").val();
     var regex= /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
-    var selectemail= $ ("tbody tr th:nth-of-type(4)");
+    var selectemail= $ ("tbody tr th:nth-of-type(3)");
     console.log(selectemail);
          if (name ==="" && name !== isNaN) 
          {
@@ -47,7 +47,7 @@ function verif(selectemail,email)
 
 function addline(name,lastname,email)
 { 
-	var selectemail= $ ("tbody tr th:nth-of-type(4)");
+	var selectemail= $ ("tbody tr th:nth-of-type(3)");
 	var tableau = document.getElementById("tableau");
 	var ligne = tableau.insertRow(-1);
     var colonne1 = ligne.insertCell(0);
