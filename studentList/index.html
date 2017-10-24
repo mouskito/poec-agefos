@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aston student's</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+    <section>
+        <h1 class="text-center page-header">Etudiants Aston</h1>
+            <form action="#" method="get" class="jumbotron">
+                <fieldset class="form-group row">
+                    <legend>Ajouter un étudiant :</legend>                        
+                        <div class="col form-group">
+                            <label for="name" class="col-form-label">Nom</label>
+                            <input type="text" name="name" id="name" class="form-control text-uppercase">
+                        </div>
+                        <div class="col form-group">
+                            <label for="firstname" class="col-form-label">Prénom</label>
+                            <input type="text" name="firstname" id="firstname" class="form-control text-capitalize">
+                        </div>
+                        <div class="col form-group">
+                            <label for="email" class="col-form-label">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>       
+                </fieldset>
+                <button type="submit" class="btn btn-primary float-right">Ajouter</button>         
+            </form>
+    </section>
+    <section class="jumbotron">
+        <h2>Liste des étudiants</h2>
+        <table id="tableau" class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Prénom</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody></tbody>        
+        </table>
+    </section>
+        
+
+    <script src="js/script.js"></script>
+</body>
+</html>
