@@ -521,8 +521,17 @@ function movePlayer(deplacement) {
             alert("FELICITATIONS " + players[0].name + ", vous avez remporté la partie !");
             location.reload();
         }
+        for (var i = 1; i < nbPlayers; i++) {
+            if (players[0].currentCase === players[i].currentCase && players[0].currentCase !== 0) {
+                alert("Un conflit a lieu sur votre case !\n" + players[0].name + " vient d'éjecter " + players[i].name + " à la case départ !");
+                players[i].currentCase = 0;
+                players[i].x = tabCase[0].x;
+                players[i].y = tabCase[0].y;
+                break;
+            }
+        }
         if (players[0].currentCase === 27 || players[0].currentCase === 54) {
-            alert("Attention " + players[0].name + ", vous allez être téléporter ailleurs !")
+            alert("Attention " + players[0].name + ", vous allez être téléporté ailleurs !")
             if (players[0].currentCase === 27) {
                 players[0].x = tabCase[54].x;
                 players[0].y = tabCase[54].y;
