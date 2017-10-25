@@ -448,8 +448,6 @@ var tabCase = [
         type: 6
     }
 ];
-var timeout;
-var delay = 100;
 var nbPlayers;
 var players = [];
 var tokenColor = ["rouge", "bleu", "jaune", "vert"];
@@ -464,12 +462,21 @@ button.click(function () {
     var firstRoll = parseInt(Math.random() * 6 + 1);
     var secondRoll = parseInt(Math.random() * 6 + 1);
     var playerCurrent;
+    var playAgain;
 
     alert(players[0].name + " a fait " + firstRoll + " et " + secondRoll + " pour un total de " + (firstRoll + secondRoll));
-    movePlayer(firstRoll + secondRoll);
+    playAgain = movePlayer(firstRoll + secondRoll);
     refreshCanvas();
     if (firstRoll === secondRoll) {
         alert("Bravo " + players[0].name + ", vous venez d'effectuer un Double !\n Vous allez pouvoir relancer les dés !")
+    } else if (playAgain === 1) {
+        alert("Vous venez de tomber sur une case pour relancer les Dés, à vous de rejouer " + players[0].name + " !");
+    } else if (playAgain === 2) {
+        alert(players[0].name + " empêche " + players[1].name + " de jouer au prochain tour !");
+        playerCurrent = players.shift();
+        players.push(playerCurrent);
+        playerCurrent = players.shift();
+        players.push(playerCurrent);
     } else {
         playerCurrent = players.shift();
         players.push(playerCurrent);
@@ -498,6 +505,9 @@ choiceOrder.click(function () {
 
 
 function movePlayer(deplacement) {
+    var relance = 0;
+    var bloque = 0;
+
     if (players[0].currentCase + deplacement > 63) {
         alert("Oups " + players[0].name + ", vous êtes parti bien trop loin .. Vous revoilà au départ !");
         players[0].currentCase = 0;
@@ -507,13 +517,35 @@ function movePlayer(deplacement) {
         players[0].currentCase += deplacement;
         players[0].x = tabCase[players[0].currentCase].x;
         players[0].y = tabCase[players[0].currentCase].y;
+        if (players[0].currentCase === 63) {
+            alert("FELICITATIONS " + players[0].name + ", vous avez remporté la partie !");
+            location.reload();
+        }
+        if (players[0].currentCase === 27 || players[0].currentCase === 54) {
+            alert("Attention " + players[0].name + ", vous allez être téléporter ailleurs !")
+            if (players[0].currentCase === 27) {
+                players[0].x = tabCase[54].x;
+                players[0].y = tabCase[54].y;
+                players[0].currentCase = 54;
+            } else {
+                players[0].x = tabCase[27].x;
+                players[0].y = tabCase[27].y;
+                players[0].currentCase = 27;
+            }
+        } else if (players[0].currentCase === 18 || players[0].currentCase === 36) {
+            relance = 1;
+        } else if (players[0].currentCase === 9 || players[0].currentCase === 45) {
+            bloque = 2;
+
+        }
     }
+    return relance + bloque;
 }
 
 
 function refreshCanvas() {
     ctx.clearRect(0, 0, 750, 400);
-    
+
     for (var i = 0; i < tabCase.length; i++) {
         ctx.fillStyle = tabCase[i].color;
         ctx.fillRect(tabCase[i].x, tabCase[i].y, 50, 50);
