@@ -1,0 +1,10 @@
+*** Application Quizz (QCM) ***
+
+Fonctionnalités attendues:
+- Enregistrement de questions/réponses
+- Génération de questionnaires par catégorie et niveau de difficulté
+- Affichage des résultats
+
+Structure d'un QCM
+- 1 question (title, category, level)
+- Plusieurs réponses (body, correct)

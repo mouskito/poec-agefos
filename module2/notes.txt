@@ -1,0 +1,31 @@
+MYSQL
+Connexion:
+mysql -uroot -p
+
+Afficher les bases:
+show databases;
+
+Créer une base:
+create database quizz;
+
+Installer phpmyadmin
+sudo  apt install phpmyadmin
+apache2 : ok
+
+http://localhost/phpmyadmin => not found
+
+1/ sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+2/ sudo a2enconf phpmyadmin.conf
+3/ service apache2 reload
+
+Plusieurs bibliothèques PHP peuvent intéragir avec MySQL
+mysqli (style procédural). Exemple: mysqli_fetch();
+pdo (style oo) exemple: pdo->fetch()
+
+
+// Afficher les erreurs
+cd /etc/php/7.0/apache2
+Modifier php.ini => display_errors = On
+
+Mail de Cassandre:
+clelanncarrara@aston-ecole.com
