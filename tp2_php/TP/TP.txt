@@ -1,0 +1,37 @@
+*** TP ***
+
+1. Créer une interface de gestion des catégories permettant
+les opérations CRUD. L'utilisateur pourra:
+- voir la liste des catégories 
+//check
+
+- ajouter une catégorie 
+//check
+
+- modifier une catégorie 
+//check
+
+- supprimer une catégorie
+//check
+
+N.B: pour les plus intrépides, créer une version plus élaborée
+avec une possibilité de définir des sous-catégories.
+Exemple:
+  Art -> Peinture, Musique, etc.
+  Sport -> Football, Tennis, etc.
+
+//CHEEEEEEEECK
+
+2. Modifier les formulaires d'ajout 
+//check
+
+et de modification
+//check
+
+d'une question. Les options du menu déroulant des catégories
+devront provenir de la base de données.
+
+3. Modifier la colonne "Niveau" du tableau des questions. 
+//check
+Au lieu d'afficher une valeur numérique (1, 2, etc...),
+on affichera le texte correspondant (facile, moyen, etc...)
