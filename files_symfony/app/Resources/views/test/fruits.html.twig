@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<style>
+  .not-comestible {
+    color: orange
+  }
+</style>
+{% endblock %}
+
+{% block body %}
+<!-- <h1>Liste de fruits (version dynamique, TWIG)</h1> -->
+
+<h1>{{ title }}</h1>
+
+<p>
+  Message en provenance du controlleur:
+  <strong>{{ message }}</strong>
+</p>
+
+<ul>
+  {% for fruit in fruits %}
+  <li>{{ fruit }}</li>
+  {% endfor %}
+</ul>
+
+<select>
+  {% for f in fruits2 %}
+  <option>{{ f.name }}</option>
+  {% endfor %}
+</select>
+
+<table class="table table-bordered table-striped">
+  {% for f in fruits2 %}
+  <tr>
+    <td>{{ f.name }}</td>
+    <td>{{ f.origin }}</td>
+    <td>
+      {% if not f.comestible %} <span>Non </span> {% endif %} comestible
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+<table class="table table-bordered table-striped">
+  {% for f in fruits3 %}
+  <tr>
+    <td>{{ f.name }}</td>
+    <td>{{ f.getOrigin() }}</td>
+    <td>
+      {% if f.comestible %}
+      Aucun risque connu
+      {% else %}
+      <span class="not-comestible">Dangereux</span>
+      {% endif %}
+    </td>
+    <td>
+      {% if f.wiki %}
+      <a href="{{f.wiki}}" target="_blank">Article wikipedia</a>
+      {% endif %}
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+
+
+{% if toto %}
+  <p>Toto est vrai</p>
+{% else %}
+  <p>Toto n'est pas vrai (vaut false ou null)</p>
+{% endif %}
+
+{% endblock %}

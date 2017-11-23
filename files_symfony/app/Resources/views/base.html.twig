@@ -1,0 +1,59 @@
+{# commentaire
+{{ }} permet de lire une variable
+{% %} permet de définir in bloc d'instructions (exemple: for in, if)
+#}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Intro Symfony par Christophe</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <style>
+        /*ul {
+          cursor:pointer;
+        }
+        li:hover > ul {
+          display:block !important;
+        }*/
+        .submenu {
+          display: none;
+          position: absolute;
+          top: 32px;
+          left: 15px;
+          background-color: #CCC;
+          padding: 8px;
+          list-style: none;
+          border-radius: 4px
+        }
+        nav ul > li {
+          position: relative
+        }
+        li:hover > ul.submenu {
+          display:block
+        }
+        </style>
+        {% block css %}{% endblock %}
+    </head>
+    <body>
+      <nav>
+        <ul class="nav nav-tabs">
+          <li><a href="{{ path('homepage') }}">Accueil</a></li>
+          <li><a href="{{ path('fruit_admin_page') }}">Fruits</a></li>
+          <li><a href="#">Test</a>
+            <ul class="submenu">
+              <li><a href="{{ path('fruits_page') }}">Fruits</a></li>
+              <li><a href="{{ path('fruits_comestibles_page') }}">Fruits comestibles</a></li>
+              <li><a href="{{ path('example_page') }}">Exemple</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+        {% block body %}{% endblock %}
+
+    <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+    {% block js %}{% endblock %}
+    </body>
+</html>

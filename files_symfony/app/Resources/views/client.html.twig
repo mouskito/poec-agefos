@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h2>Ajax</h2>
+
+<div id="app">
+  <button id="btnTestAjax" type="button">Test ajax</button>
+  <button id="btnListFruits" type="button">liste des fruits</button>
+  Afficher en tant que
+  <select id="selectFormat">
+    <option value="table">Tableau</option>
+    <option value="list">Liste</option>
+  </select>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div id="fruitDisplay"></div>
+      </div>
+      <div class="col-md-5">
+        <div id="fruitDetails"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+<script src="{{asset('js/client.js')}}"></script>
+{% endblock %}

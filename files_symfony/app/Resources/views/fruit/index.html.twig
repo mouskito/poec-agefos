@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+  <h2>Fruits</h2>
+
+  <button id="btnHideForm" type="button">Afficher le formulaire</button>
+  <form style="display:none" class="form-inline well" method="post">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Nom">
+    </div>
+    <div class="form-group">
+      <input type="text" name="origin" placeholder="Origine">
+    </div>
+    <div class="form-group">
+      <label for="comestible">Comestible</label>
+      <input type="checkbox" name="comestible">
+    </div>
+    <div class="form-group">
+      <select name="producer_id">
+        <!-- afficher autant d'options qu'il y a de producteurs enregistrés -->
+        {% for p in producers %}
+          <option value="{{p.id}}">{{p.name}}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Catégories</p>
+      {% for c in categories %}
+        <input name="categories[]" type="checkbox" value="{{c.id}}">{{c.name}}
+      {% endfor %}
+    </div>
+    <input type="submit" name="submit" value="Enregisrer">
+  </form>
+
+  <hr>
+
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>Nom</th>
+      <th>Origine</th>
+      <th>Comestible</th>
+      <th>Producteur</th>
+      <th style="display:none">Détaillants</th>
+      <th>Actions</th>
+    </tr>
+    {% for f in fruits %}
+      <tr>
+        <td>{{ f.name }}</td>
+        <td>{{ f.origin }}</td>
+        <td>
+          {% if f.comestible == 1 %}
+            oui
+          {% else %}
+            non
+          {% endif %}
+        </td>
+        <td>
+          {% if f.producer %}
+            {#
+              la propriété producer ne vaut pas NULL :
+              on peut accéder à la propriété name de l'objet producer
+            #}
+            {{ f.producer.name }}
+          {% endif %}
+        </td>
+        <td style="display:none">
+          {% if f.retailors | length > 0 %}
+            {% for r in f.retailors %}
+             <div>{{ r.name }}</div>
+            {% endfor %}
+          {% endif %}
+        </td>
+        <td>
+          <a
+            class="btn btn-default btn-xs"
+            href="{{ path('fruit_details', {'id': f.id}) }}">Détails</a>
+          <a
+            class="btn btn-primary btn-xs"
+            href="{{ path('fruit_update', {'id': f.id}) }}">Modifier</a>
+          <a
+            class="btn btn-danger btn-xs"
+            href="{{ path('fruit_delete', {'id': f.id}) }}">Supprimer</a>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}
+
+{% block js %}
+<script src="{{asset('js/script.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h3>{{fruit.name}}</h3>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div>
+        <strong>Origine: </strong>{{fruit.origin}}
+      </div>
+      <div>
+        <strong>Comestible: </strong>
+        {% if fruit.comestible %} oui
+        {% else %} non
+        {% endif %}
+      </div>
+      <div>
+        {% if fruit.producer %}
+        <strong>Producteur: </strong>
+        <a href="{{path('producer_details', {'id': fruit.producer.id})}}">
+          {{fruit.producer.name}}
+        </a>
+        {% endif %}
+      </div>
+      <div>
+        {% if fruit.retailors | length > 0 %}
+          <strong>Détaillants: </strong>
+          {% for r in fruit.retailors %}
+            <div>{{r.name}}</div>
+          {% endfor %}
+        {% endif %}
+      </div>
+      <div>
+        {% if fruit.category | length > 0 %}
+          <strong>Catégories: </strong>
+          {% for c in fruit.category %}
+            <div>{{c.name}}</div>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+    </div>
+    <div class="col-md-6">
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}

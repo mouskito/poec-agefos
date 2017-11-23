@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+  <h2>Modification du fruit</h2>
+
+  <form class="form-inline" method="post">
+    <div class="form-group">
+      <input type="text" name="name" value="{{ fruit.name }}">
+    </div>
+    <div class="form-group">
+      <input type="text" name="origin" value="{{ fruit.origin }}">
+    </div>
+    <div class="form-group">
+      <label for="comestible">Comestible</label>
+      {% if fruit.comestible == 1 %}
+        <input type="checkbox" name="comestible" checked>
+      {% else %}
+        <input type="checkbox" name="comestible">
+      {% endif %}
+    </div>
+    <input type="submit" name="submit" value="Mettre à jour">
+  </form>
+
+{% endblock %}

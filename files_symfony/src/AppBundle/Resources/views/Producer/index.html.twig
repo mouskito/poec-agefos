@@ -1,0 +1,21 @@
+{% extends "::base.html.twig" %}
+
+{% block css %}
+<style>
+.logo {width: 75px}
+</style>
+{% endblock %}
+
+{% block body %}
+
+<h2>Liste des producteurs</h2>
+{% for p in producers %}
+  <div>
+    {{ p.name }}
+    {% if p.logo %}
+      <img class="logo" src="{{ asset('img/logo/') ~ p.logo }}" alt="">
+    {% endif %}
+  </div>
+{% endfor %}
+
+{% endblock %}
